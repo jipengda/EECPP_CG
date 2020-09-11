@@ -604,7 +604,7 @@ def global_cut_make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_
     
     C = 6.0
     lamda = 0.1164
-    garma = 0.0173
+    garma = 0.0173 # garma try some intermediate values or try some random values between two plausible values
     zero_turn = garma * 180
     C = C + zero_turn
     control_inf = C/lamda+1
