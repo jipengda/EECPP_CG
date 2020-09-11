@@ -200,3 +200,8 @@ for label in Labels:
 		print("Label selected is: ", str(label))
 
 print()
+print("Objective value:", pulp.value(MASEECPP.objective))
+
+
+print("Time taken for solving is " + str((toc - tic)) + " sec")
+print()
