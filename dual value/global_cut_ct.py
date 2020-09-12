@@ -28,50 +28,24 @@ coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
 #
         
-'''
-label_table=[[0, 1, 0, [3.3468]],
-             [0, 2, 0, [3.5796]],
-             [0, 3, 0, [3.8124]],
-             [0, 4, 0, [3.3468]],
-             [0, 5, 0, [3.4432]],
-             [0, 6, 0, [3.6346]],
-             [0, 7, 0, [3.8502]],
-             [0, 8, 0, [3.5796]],
-             [0, 9, 0, [3.6346]],
-             [0, 10, 0, [3.7725]],
-             [0, 11, 0, [3.9534]],
-             [0, 12, 0, [3.8124]],
-             [0, 13, 0, [3.8502]],
-             [0, 14, 0, [3.9534]],
-             [0, 15, 0, [4.1017]]]
-'''
-
-
-
 # 3x3
-label_table = [[0, 1, 0, [3.3468]], 
-               [0, 2, 0, [3.5796]],
-               [0, 3, 0, [3.3468]],
-               [0, 4, 0, [3.4432]],
-	           [0, 5, 0, [3.6346]],
-               [0, 6, 0, [3.5796]],
-               [0, 7, 0, [3.6346]],
-               [0, 8, 0, [3.7725]]]
-'''
-# 3 x 4
-label_table = [[0, 1, 0, [3.3468]],
-		       [0, 2,0,[3.5796]],
-		       [0,3,0,[3.3468]],
-		       [0,4,0,[3.4432]],
-		       [0,5,0,[3.6346]],
-		[0,6,0,[3.5796]],
-		[0,7,0,[3.6346]],
-		[0,8,0,[3.7725]],
-		[0,9,0,[3.8124]],
-		[0,10,0,[3.8502]],
-		[0,11,0,[3.9534]]]
-'''
-
+#label_table = [[0, 1, 0, [3.3468]], 
+#               [0, 2, 0, [3.5796]],
+#               [0, 3, 0, [3.3468]],
+#               [0, 4, 0, [3.4432]],
+#	           [0, 5, 0, [3.6346]],
+#               [0, 6, 0, [3.5796]],
+#               [0, 7, 0, [3.6346]],
+#               [0, 8, 0, [3.7725]]]
+# 3x3 no turn cost
+label_table = [[0, 1, 0, [0.2328]],
+               [0, 2, 0, [0.4656]],
+               [0, 3, 0, [0.2328]],
+               [0, 4, 0, [0.32922891732045656]],
+               [0, 5, 0, [0.5205566251619511]],
+               [0, 6, 0, [0.4656]],
+               [0, 7, 0, [0.5205566251619511]],
+               [0, 8, 0, [0.6584578346409131]]]
              
 def make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
     label_number = len(label_table)
@@ -123,7 +97,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     #arc_three_nodes<->arcs
     #c=6.0 battery constraint is 6.0
     
-    C = 6.0
+    C = 2.0
     distance_lambda = 0.1164
     turn_gamma = 0
     zero_turn = turn_gamma * 180
@@ -539,162 +513,6 @@ def angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y):
     theta_radians=math.pi-np.arccos(round((distance_o_p**2+distance_p_q**2-distance_o_q**2)/(2*distance_o_p*distance_p_q),2))
     theta_degrees=radians_to_degrees*theta_radians
     return theta_degrees
-
-def global_cut_make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
-    label_number = len(label_table)
-    nodesNumber= colNumber * rowNumber
-    departurePoint = 0
-    obstacles = []
-    ##
-    C=[0] * label_number
-    for l in range(label_number):
-        C[l] = label_table[l][-1][0]
-
-    # column vector set
-    a = [[0 for i in range(nodesNumber)] for j in range(label_number)]
-    labels = [l for l in range(label_number)]
-    for l in range(label_number):
-        for j in range(0, nodesNumber):
-            if j in label_table[l]:
-                a[l][j] = 1
-    #model<->m
-    m = Model(name='EECPP_master')
-    m.labels = labels
-    m.label_table = label_table
-    m.label_number = label_number
-    m.nodes = [i for i in range(nodesNumber)]
-    m.x = m.continuous_var_dict(m.labels,lb=0, ub=1, name="visit") # determine if the label is selected(x=1) or not(x=0)
-    # minimize total cost
-    m.visiting_cost = m.sum( (C[l] * m.x[l]) for l in labels )
-    m.minimize(m.visiting_cost)
-    
-
-    m.node_visit_cts=[]
-    #
-    ##########
-    for node in m.nodes:
-        if node in obstacles:
-            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) >= 0
-        else:
-            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) >= 1 + 1# obtaining integer solution
-        node_visit_ct_name = 'ct_visit{0!s}'.format(node)
-        m.node_visit_cts.append(node_visit_ct)
-    m.add_constraints(m.node_visit_cts)
-    return m 
-
-def global_cut_make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs):
-    nodesNumber = colNumber * rowNumber
-    duals = [0] * nodesNumber
-    pi = duals
-    departurePoint = 0
-
-    #arc_three_nodes<->arcs
-    #c=6.0 battery constraint is 6.0
-    
-    C = 6.0
-    distance_lambda = 0.1164
-    turn_gamma = 0 # turn_gamma try some intermediate values or try some random values between two plausible values
-    zero_turn = turn_gamma * 180
-    C = C + zero_turn
-    control_inf = C/distance_lambda+1
-    radians_to_degrees = 180/(math.pi)
-    distanceValue=0
-    theta_radians=0
-    theta_degrees=0
-    obstacles = []
-    Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!=departurePoint]
-    # Except departurePoint( arrival point is same as departurePoint) and obstacles
-    NodesAndDeparturePoint = Nodes + [departurePoint]
-    AllNodes = NodesAndDeparturePoint + obstacles
-    edges = [(i,j) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint]
-    arcs = [(i,j,k) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint for k in NodesAndDeparturePoint]
-    distance={(i,j):0 for i,j in edges}
-    
-    ############
-    
-    ############
-    """
-    Need add something to deal with obstacles
-    if line segment of i&j interacts with obstacles, c_ij is infinity(math.inf).
-    if line segment of i&j does not interact with obstacles, c_ij is european distance.
-    """
-
-    c = {(i,j):0 for i,j in edges}
-    q = {(i,j,k):0 for i,j,k in arcs}
-    distance={(i,j):0 for i,j in edges}
-    for i,j in edges:
-        distanceValue = np.hypot(coord_x[i]-coord_x[j], coord_y[i]-coord_y[j])
-        distance[(i,j)]=distanceValue
-        distance_cost = distance_lambda * distanceValue
-        c[(i,j)] = distance_cost
-    
-    for o,p in edges:
-        View = check_obstacle(obstacles, o, p, colNumber, rowNumber)
-        if View == 0:
-            c[(o,p)] = math.inf
-        else:
-            pass
-    turning_cost = 7
-    for i,j,k in arcs:
-        theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
-        theta_degrees=theta_radians*radians_to_degrees
-        turning_cost=turn_gamma*theta_degrees
-        q[(i,j,k)]=turning_cost
-        a=math.isnan(turning_cost)
-        if a is True:
-            turning_cost=0
-        else:
-            pass
-        q[(i,j,k)]=turning_cost
-    
-
-    # An arc flow model for the basic EECPP
-    gen_model = Model("eecpp_generate_labels")
-    gen_model.edges = edges
-    gen_model.duals = [0] * nodesNumber
-    gen_model.x = gen_model.binary_var_dict(edges, name = 'X') # flow variables, 1 if the agent goes directly from node i to node j
-    gen_model.I = gen_model.binary_var_dict(arcs, name = "I") # use I in order to linearly replace x (i,j) x x (j,k)
-    d = gen_model.continuous_var_list(AllNodes, name = "D") # d is a dummy variable associated with node i for subtour elimination
-
-    ##### set 4 expr expressions to simplify expressions later
-    gen_model.expr_1 = gen_model.sum( c[(i,j)] * gen_model.x[(i,j)] for i,j in edges)
-    gen_model.expr_2 = gen_model.sum( gen_model.duals[i] * gen_model.x[(i,j)] for i,j in edges)
-    # gen_model.expr_3 has mistake
-    gen_model.expr_3 = gen_model.sum((q[(i,j,k)]* gen_model.I[(i,j,k)]) for i,j,k in arcs)
-    # turn cost calculation is wrong
-    gen_model.expr_4 = gen_model.sum( (q[(i,0,k)] * gen_model.I[(i,0,k)]) for i,k in edges)
-    #####
-    
-    # what is next_integer
-    alpha = dual[next_integer]
-    gen_model.expr = gen_model.expr_1 - gen_model.expr_2 + gen_model.expr_3 - gen_model.expr_4 - alpha
-    gen_model.labelCost = gen_model.expr + gen_model.expr_2
-    gen_model.energyCost = gen_model.expr_1 + gen_model.expr_3
-    
-    gen_model.minimize(gen_model.expr) #(24)
-    
-    # 2. setup constraint
-    gen_model.add_constraint(gen_model.sum( gen_model.x[(0,j)] for j in Nodes) == 1, ctname = None) #(25)
-    gen_model.add_constraint(gen_model.x[(0,0)] !=1, ctname= None) # (33)
-
-
-    #once a drone visits a node, it also departs from the same node. Each node can and can only be visited only once.
-    for j in NodesAndDeparturePoint:
-        gen_model.add_constraint(gen_model.sum( gen_model.x[(i,j)] for i in NodesAndDeparturePoint)==
-                                 gen_model.sum( gen_model.x[(j,k)] for k in NodesAndDeparturePoint), ctname = None) #(31)
-        
-    for i,j,k in arcs:
-        gen_model.add_constraint( gen_model.I[(i,j,k)] >= gen_model.x[(i,j)] + gen_model.x[(j,k)] - 1, ctname = None ) #(26)
-        gen_model.add_constraint( gen_model.I[(i,j,k)] <= gen_model.x[(i,j)], ctname = None ) #(27)
-        gen_model.add_constraint( gen_model.I[(i,j,k)] <= gen_model.x[(j,k)], ctname = None ) #(28)
-
-    #(29)
-#    gen_model.add_constraint( (gen_model.sum(( gen_model.x[(i,j)] * c[(i,j)] ) for i,j in edges) + gen_model.sum(( q[(i,j,k)]* gen_model.I[(i,j,k)] ) for i,j,k in arcs) )<= C, ctname = None)  
-    gen_model.add_constraint( gen_model.energyCost <= C, ctname = None )
-    #(30) subtour elimination constraint
-    for i,j in edges:    
-        if j!=departurePoint:
-            gen_model.add_indicator( gen_model.x[(i,j)],d[i] + 1 == d[j],name=None)
 
 def add_global_cut(master_model, next_integer):
     labels = master_model.labels
