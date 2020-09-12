@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 Created on Sat Jun 27 21:17:14 2020
@@ -123,11 +124,11 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     #c=6.0 battery constraint is 6.0
     
     C = 6.0
-    lamda = 0.1164
-    garma = 0.0173
-    zero_turn = garma * 180
+    lambda = 0.1164
+    gamma = 0.0173
+    zero_turn = gamma * 180
     C = C + zero_turn
-    control_inf = C/lamda+1
+    control_inf = C/lambda+1
     radians_to_degrees = 180/(math.pi)
     distanceValue=0
     theta_radians=0
@@ -156,7 +157,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     for i,j in edges:
         distanceValue = np.hypot(coord_x[i]-coord_x[j], coord_y[i]-coord_y[j])
         distance[(i,j)]=distanceValue
-        distance_cost = lamda * distanceValue
+        distance_cost = lambda * distanceValue
         c[(i,j)] = distance_cost
     
     for o,p in edges:
@@ -169,7 +170,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     for i,j,k in arcs:
         theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
         theta_degrees=theta_radians*radians_to_degrees
-        turning_cost=garma*theta_degrees
+        turning_cost=gamma*theta_degrees
         q[(i,j,k)]=turning_cost
         a=math.isnan(turning_cost)
         if a is True:
@@ -591,11 +592,11 @@ def global_cut_make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_
     #c=6.0 battery constraint is 6.0
     
     C = 6.0
-    lamda = 0.1164
-    garma = 0.0173 # garma try some intermediate values or try some random values between two plausible values
-    zero_turn = garma * 180
+    lambda = 0.1164
+    gamma = 0.0173 # gamma try some intermediate values or try some random values between two plausible values
+    zero_turn = gamma * 180
     C = C + zero_turn
-    control_inf = C/lamda+1
+    control_inf = C/lambda+1
     radians_to_degrees = 180/(math.pi)
     distanceValue=0
     theta_radians=0
@@ -624,7 +625,7 @@ def global_cut_make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_
     for i,j in edges:
         distanceValue = np.hypot(coord_x[i]-coord_x[j], coord_y[i]-coord_y[j])
         distance[(i,j)]=distanceValue
-        distance_cost = lamda * distanceValue
+        distance_cost = lambda * distanceValue
         c[(i,j)] = distance_cost
     
     for o,p in edges:
@@ -637,7 +638,7 @@ def global_cut_make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_
     for i,j,k in arcs:
         theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
         theta_degrees=theta_radians*radians_to_degrees
-        turning_cost=garma*theta_degrees
+        turning_cost=gamma*theta_degrees
         q[(i,j,k)]=turning_cost
         a=math.isnan(turning_cost)
         if a is True:
