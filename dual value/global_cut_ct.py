@@ -125,7 +125,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     
     C = 6.0
     distance_lambda = 0.1164
-    turn_gamma = 0.0173
+    turn_gamma = 0
     zero_turn = turn_gamma * 180
     C = C + zero_turn
     control_inf = C/distance_lambda+1
@@ -593,7 +593,7 @@ def global_cut_make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_
     
     C = 6.0
     distance_lambda = 0.1164
-    turn_gamma = 0.0173 # turn_gamma try some intermediate values or try some random values between two plausible values
+    turn_gamma = 0 # turn_gamma try some intermediate values or try some random values between two plausible values
     zero_turn = turn_gamma * 180
     C = C + zero_turn
     control_inf = C/distance_lambda+1
