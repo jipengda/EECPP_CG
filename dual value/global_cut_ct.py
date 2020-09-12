@@ -224,17 +224,6 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     for i,j in edges:    
         if j!=departurePoint:
             gen_model.add_indicator( gen_model.x[(i,j)],d[i] + 1 == d[j],name=None)
-    
-    #####
-
-    
-
-    
-    
-#    gen_model.add_constraint(gen_model.expr<=0)
-    
-    
-    #####
 
     return gen_model
 
@@ -269,9 +258,8 @@ def add_pattern_to_master_model(master_model, colNumber, rowNumber, x_values, la
     LabelAndItsCost="Column Generation Label and its cost:" +"\n" + str(gen_model_label) + "\n" + str(label_cost)
     outF.write(LabelAndItsCost)
     outF.write("\n")
-#    print(gen_model_label)
 
-    #
+    
     # last difficult about nameing new_lable and giving the right ID
     new_label=gen_model_label
     new_labelCost = label_cost
