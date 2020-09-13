@@ -32,7 +32,7 @@ def angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y):
 def totalCost_calculation_by_set(optimalSet, coord_x, coord_y, D):
     distance_lambda = 0.1164
     turn_gamma = 0.0173
-    turn_gamma = 0.0172 # so turning cost is 0
+    turn_gamma = 0.0176 # so turning cost is 0
     totalCost = 0
     lastNode=0
     newNode=optimalSet[1]
