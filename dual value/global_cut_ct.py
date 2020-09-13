@@ -38,12 +38,8 @@ The format of pool is like [0, node, 0, [cost]]
 """
 # turning cost is 0, from totalCost_calculation_by_set file we know.
 import totalCost_calculation_by_set
-import Data
-colNumber = 3
-rowNumber = 3
+
 nodesNumber = colNumber * rowNumber
-coord_x = Data.create_coord_x(colNumber, rowNumber)
-coord_y = Data.create_coord_y(colNumber, rowNumber)
 D = Data.create_D(nodesNumber, coord_x, coord_y)
 #optimalSet = [0,8,0]
 depot = 0
@@ -57,16 +53,9 @@ for node in range(1, nodesNumber):
     unit_basic_pool.append([cost])
     basic_pool.append(unit_basic_pool)
         
-# 3x3
-#label_table = [[0, 1, 0, [3.3468]], 
-#               [0, 2, 0, [3.5796]],
-#               [0, 3, 0, [3.3468]],
-#               [0, 4, 0, [3.4432]],
-#	           [0, 5, 0, [3.6346]],
-#               [0, 6, 0, [3.5796]],
-#               [0, 7, 0, [3.6346]],
-#               [0, 8, 0, [3.7725]]]
-# 3x3 no turn cost
+
+
+
 label_table = [[0, 1, 0, [0.2328]],
                [0, 2, 0, [0.4656]],
                [0, 3, 0, [0.2328]],
