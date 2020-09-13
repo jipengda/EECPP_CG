@@ -27,6 +27,35 @@ rowNumber=3
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
 #
+
+#------------------------------------------------------------------------------
+#add automatic_basic_pool part
+#------------------------------------------------------------------------------
+"""
+This file is going to generate basic pool automatically for the map defined
+
+The format of pool is like [0, node, 0, [cost]]
+"""
+# turning cost is 0, from totalCost_calculation_by_set file we know.
+import totalCost_calculation_by_set
+import Data
+colNumber = 3
+rowNumber = 3
+nodesNumber = colNumber * rowNumber
+coord_x = Data.create_coord_x(colNumber, rowNumber)
+coord_y = Data.create_coord_y(colNumber, rowNumber)
+D = Data.create_D(nodesNumber, coord_x, coord_y)
+#optimalSet = [0,8,0]
+depot = 0
+basic_pool=[]
+for node in range(1, nodesNumber):
+    unit_basic_pool=[]
+    unit_basic_pool.append(depot)
+    unit_basic_pool.append(node)
+    unit_basic_pool.append(depot)
+    cost = totalCost_calculation_by_set.totalCost_calculation_by_set(unit_basic_pool, coord_x,coord_y,D)
+    unit_basic_pool.append([cost])
+    basic_pool.append(unit_basic_pool)
         
 # 3x3
 #label_table = [[0, 1, 0, [3.3468]], 
