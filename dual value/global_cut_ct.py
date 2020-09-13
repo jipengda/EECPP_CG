@@ -41,7 +41,6 @@ import totalCost_calculation_by_set
 
 nodesNumber = colNumber * rowNumber
 D = Data.create_D(nodesNumber, coord_x, coord_y)
-#optimalSet = [0,8,0]
 depot = 0
 basic_pool=[]
 for node in range(1, nodesNumber):
@@ -56,14 +55,7 @@ for node in range(1, nodesNumber):
 
 
 
-label_table = [[0, 1, 0, [0.2328]],
-               [0, 2, 0, [0.4656]],
-               [0, 3, 0, [0.2328]],
-               [0, 4, 0, [0.32922891732045656]],
-               [0, 5, 0, [0.5205566251619511]],
-               [0, 6, 0, [0.4656]],
-               [0, 7, 0, [0.5205566251619511]],
-               [0, 8, 0, [0.6584578346409131]]]
+label_table = basic_pool
              
 def make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
     label_number = len(label_table)
