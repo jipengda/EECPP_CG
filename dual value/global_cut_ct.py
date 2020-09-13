@@ -110,7 +110,8 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     C = 11
     distance_lambda = 0.1164
     turn_gamma = 0
-    turn_gamma = 0.015
+    turn_gamma = 0.0176
+    
     zero_turn = turn_gamma * 180
     control_inf = C/distance_lambda+1
     radians_to_degrees = 180/(math.pi)
