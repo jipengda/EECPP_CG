@@ -97,11 +97,11 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     #arc_three_nodes<->arcs
     #c=6.0 battery constraint is 6.0
     
-    C = 1.5
+    C = 11
     distance_lambda = 0.1164
     turn_gamma = 0
+    turn_gamma = 0.015
     zero_turn = turn_gamma * 180
-    C = C + zero_turn
     control_inf = C/distance_lambda+1
     radians_to_degrees = 180/(math.pi)
     distanceValue=0
@@ -173,7 +173,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     
     gen_model.expr = gen_model.expr_1 - gen_model.expr_2 + gen_model.expr_3 - gen_model.expr_4
     gen_model.labelCost = gen_model.expr + gen_model.expr_2
-    gen_model.energyCost = gen_model.expr_1 + gen_model.expr_3
+    gen_model.energyCost = gen_model.expr_1 + gen_model.expr_3 - gen_model.expr_4
     
     gen_model.minimize(gen_model.expr) #(24)
     
