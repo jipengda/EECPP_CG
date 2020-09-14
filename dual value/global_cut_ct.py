@@ -60,9 +60,47 @@ label_table = basic_pool
 nodesNumber = colNumber * rowNumber
 distance_lambda = 0.1164
 turn_gamma = 0.0173
-departure_point = 0
+departurePoint = 0
 radians_to_degrees = 180/(math.pi)
-Nodes = 
+obstacles=[]
+Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!= departurePoint]
+NodesAndDeparturePoint = Nodes + [departurePoint]
+AllNodes= NodesAndDeparturePoint + obstacles
+edges=[(i,j) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint]
+arcs= [(i,j,k) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint for k in NodesAndDeparturePoint]
+c={(i,j):0 for i,j in edges}
+q={(i,j,k):0 for i,j,k in arcs}
+distance={(i,j):0 for i,j in edges}
+for i,j in edges:
+    distanceValue=np.hypot(coord_x[i]-coord_x[j],coord_y[i]-coord_y[j])
+    distance[(i,j)]=distanceValue
+    distance_cost = distance_lambda * distanceValue
+    c[(i,j)] = distance_cost
+for o,p in edges:
+    View = check_obstacle(obstacles, o, p, colNumber, rowNumber)
+    if View == 0:
+        c[(o,p)] = math.inf
+    else:
+        pass
+
+
+seq=[-10,-9,-8,-7,-6,-5,-4,-3-2,-1,0,1,2,3,4,5,6,7,8,9,10]
+fixed_turn_gamma=0.0173
+turn_factor=0.0001    
+for i,j,k in arcs:
+    turn_gamma = fixed_turn_gamma + random.choice(seq) * turn_factor
+    theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
+    theta_degrees=theta_radians*radians_to_degrees
+    turning_cost=turn_gamma*theta_degrees
+    q[(i,j,k)]=turning_cost
+    a=math.isnan(turning_cost)
+    if a is True:
+        turning_cost=0
+    else:
+        pass
+    q[(i,j,k)]=turning_cost
+
+
 
 
 #------------------------------------------------------------------------------
@@ -122,7 +160,7 @@ def make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
 #--------------------------------------------------------------------------------
 #SUBPROBLEM MIP MODELING
 #--------------------------------------------------------------------------------     
-def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs):
+def make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y,**kwargs):
     nodesNumber = colNumber * rowNumber
     duals = [0] * nodesNumber
     pi = duals
@@ -144,48 +182,12 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     AllNodes = NodesAndDeparturePoint + obstacles
     edges = [(i,j) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint]
     arcs = [(i,j,k) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint for k in NodesAndDeparturePoint]
-    distance={(i,j):0 for i,j in edges}
-    
-    ############
-    
-    ############
+
     """
     Need add something to deal with obstacles
     if line segment of i&j interacts with obstacles, c_ij is infinity(math.inf).
     if line segment of i&j does not interact with obstacles, c_ij is european distance.
     """
-
-    c = {(i,j):0 for i,j in edges}
-    q = {(i,j,k):0 for i,j,k in arcs}
-    distance={(i,j):0 for i,j in edges}
-    for i,j in edges:
-        distanceValue = np.hypot(coord_x[i]-coord_x[j], coord_y[i]-coord_y[j])
-        distance[(i,j)]=distanceValue
-        distance_cost = distance_lambda * distanceValue
-        c[(i,j)] = distance_cost
-    
-    for o,p in edges:
-        View = check_obstacle(obstacles, o, p, colNumber, rowNumber)
-        if View == 0:
-            c[(o,p)] = math.inf
-        else:
-            pass
-    turning_cost = 7
-    seq=[-10,-9,-8,-7,-6,-5,-4,-3-2,-1,0,1,2,3,4,5,6,7,8,9,10]
-    fixed_turn_gamma=0.0173
-    turn_factor=0.0001
-    for i,j,k in arcs:
-        turn_gamma = fixed_turn_gamma + random.choice(seq) * turn_factor
-        theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
-        theta_degrees=theta_radians*radians_to_degrees
-        turning_cost=turn_gamma*theta_degrees
-        q[(i,j,k)]=turning_cost
-        a=math.isnan(turning_cost)
-        if a is True:
-            turning_cost=0
-        else:
-            pass
-        q[(i,j,k)]=turning_cost
     
 
     # An arc flow model for the basic EECPP
@@ -195,7 +197,6 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     gen_model.x = gen_model.binary_var_dict(edges, name = 'X') # flow variables, 1 if the agent goes directly from node i to node j
     gen_model.I = gen_model.binary_var_dict(arcs, name = "I") # use I in order to linearly replace x (i,j) x x (j,k)
     d = gen_model.continuous_var_list(AllNodes, name = "D") # d is a dummy variable associated with node i for subtour elimination
-
     ##### set 4 expr expressions to simplify expressions later
     gen_model.expr_1 = gen_model.sum( c[(i,j)] * gen_model.x[(i,j)] for i,j in edges)
     
@@ -309,10 +310,10 @@ def add_pattern_to_master_model(master_model, colNumber, rowNumber, x_values, la
 #--------------------------------------------------------------------------------------
 # COLUMN GENERATION ITERATIONS
 #--------------------------------------------------------------------------------------
-def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
+def eecpp_solve(c,q,colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
     master_model = make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs)
     
-    gen_model = make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y, **kwargs)
+    gen_model = make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y, **kwargs)
     
     tic = time.time()
     
@@ -434,7 +435,7 @@ def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
 # SUPPLEMENTARY FUNCTIONS
 #----------------------------------------------------------------------------------
 def eecpp_solve_default(**kwargs):
-    return eecpp_solve(colNumber, rowNumber, label_table,coord_x, coord_y, **kwargs)
+    return eecpp_solve(c,q,colNumber, rowNumber, label_table,coord_x, coord_y, **kwargs)
 
 def eecpp_print_solution(eecpp_model, outF):
     labels = eecpp_model.labels
