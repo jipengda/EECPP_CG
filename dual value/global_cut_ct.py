@@ -56,7 +56,17 @@ for node in range(1, nodesNumber):
 
 
 label_table = basic_pool
+
+
+#------------------------------------------------------------------------------
+#def functions
+#------------------------------------------------------------------------------
+
              
+
+#------------------------------------------------------------------------------
+# MASTER PROBLEM MIP MODELING
+#------------------------------------------------------------------------------             
 def make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
     label_number = len(label_table)
     nodesNumber= colNumber * rowNumber
@@ -97,7 +107,14 @@ def make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
         node_visit_ct_name = 'ct_visit{0!s}'.format(node)
         m.node_visit_cts.append(node_visit_ct)
     m.add_constraints(m.node_visit_cts)
-    return m    
+    return m   
+
+
+
+
+#--------------------------------------------------------------------------------
+#SUBPROBLEM MIP MODELING
+#--------------------------------------------------------------------------------     
 def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs):
     nodesNumber = colNumber * rowNumber
     duals = [0] * nodesNumber
@@ -110,7 +127,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     C = 11
     distance_lambda = 0.1164
     turn_gamma = 0
-    turn_gamma = 0.015
+    turn_gamma = 0.0176
     
     zero_turn = turn_gamma * 180
     control_inf = C/distance_lambda+1
@@ -167,7 +184,8 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
 
     # An arc flow model for the basic EECPP
     gen_model = Model("eecpp_generate_labels")
-    gen_model.edges = edges
+    gen_
+    model.edges = edges
     gen_model.duals = [0] * nodesNumber
     gen_model.x = gen_model.binary_var_dict(edges, name = 'X') # flow variables, 1 if the agent goes directly from node i to node j
     gen_model.I = gen_model.binary_var_dict(arcs, name = "I") # use I in order to linearly replace x (i,j) x x (j,k)
@@ -213,6 +231,11 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
 
     return gen_model
 
+
+
+#----------------------------------------------------------------------------------
+# SUPPLEMENTARY FUNCTIONS
+#----------------------------------------------------------------------------------
 def eecpp_update_duals(gen_model, new_duals):
     gen_model.duals = new_duals
     gen_model.expr_2 = gen_model.sum( gen_model.duals[i] * gen_model.x[(i,j)] for i,j in gen_model.edges)
@@ -273,6 +296,12 @@ def add_pattern_to_master_model(master_model, colNumber, rowNumber, x_values, la
     master_model.minimize(master_model.visiting_cost)
     return master_model
 
+
+
+
+#--------------------------------------------------------------------------------------
+# COLUMN GENERATION ITERATIONS
+#--------------------------------------------------------------------------------------
 def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
     master_model = make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs)
     
@@ -341,10 +370,10 @@ def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
         
 # put it in the loop every time we get a optimal solution for master model
 # check optimal solution rather than intermediate solution
-#Staring right after the fourth # is where while begins
+# Starting right after the fourth # is where while begins
 ####
 
-# print out the solutiino of master_model before judge the sum is integer or not
+# print out the solution of master_model before judge the sum is integer or not
 #
     eecpp_print_solution(master_model, outF)    
     m = 0  
@@ -394,6 +423,9 @@ def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
     
     
         
+#----------------------------------------------------------------------------------
+# SUPPLEMENTARY FUNCTIONS
+#----------------------------------------------------------------------------------
 def eecpp_solve_default(**kwargs):
     return eecpp_solve(colNumber, rowNumber, label_table,coord_x, coord_y, **kwargs)
 
