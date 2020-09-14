@@ -52,10 +52,17 @@ for node in range(1, nodesNumber):
     unit_basic_pool.append([cost])
     basic_pool.append(unit_basic_pool)
         
-
-
-
 label_table = basic_pool
+
+#------------------------------------------------------------------------------
+#Data
+#------------------------------------------------------------------------------
+nodesNumber = colNumber * rowNumber
+distance_lambda = 0.1164
+turn_gamma = 0.0173
+departure_point = 0
+radians_to_degrees = 180/(math.pi)
+Nodes = 
 
 
 #------------------------------------------------------------------------------
@@ -120,9 +127,6 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     duals = [0] * nodesNumber
     pi = duals
     departurePoint = 0
-
-    #arc_three_nodes<->arcs
-    #c=6.0 battery constraint is 6.0
     
     C = 11
     distance_lambda = 0.1164
