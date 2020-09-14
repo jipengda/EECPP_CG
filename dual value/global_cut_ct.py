@@ -169,7 +169,11 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
         else:
             pass
     turning_cost = 7
+    seq=[-2,-1,1,2]
+    fixed_turn_gamma=0.0173
+    turn_factor=0.0001
     for i,j,k in arcs:
+        turn_gamma = fixed_turn_gamma + random.choice(seq) * turn_factor
         theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
         theta_degrees=theta_radians*radians_to_degrees
         turning_cost=turn_gamma*theta_degrees
@@ -184,8 +188,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
 
     # An arc flow model for the basic EECPP
     gen_model = Model("eecpp_generate_labels")
-    gen_
-    model.edges = edges
+    gen_model.edges = edges
     gen_model.duals = [0] * nodesNumber
     gen_model.x = gen_model.binary_var_dict(edges, name = 'X') # flow variables, 1 if the agent goes directly from node i to node j
     gen_model.I = gen_model.binary_var_dict(arcs, name = "I") # use I in order to linearly replace x (i,j) x x (j,k)
