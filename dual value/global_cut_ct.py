@@ -129,8 +129,6 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
     turn_gamma = 0
     turn_gamma = 0.0176
     
-    zero_turn = turn_gamma * 180
-    control_inf = C/distance_lambda+1
     radians_to_degrees = 180/(math.pi)
     distanceValue=0
     theta_radians=0
@@ -196,13 +194,15 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
 
     ##### set 4 expr expressions to simplify expressions later
     gen_model.expr_1 = gen_model.sum( c[(i,j)] * gen_model.x[(i,j)] for i,j in edges)
-    gen_model.expr_2 = gen_model.sum( gen_model.duals[i] * gen_model.x[(i,j)] for i,j in edges)
-    # gen_model.expr_3 has mistake
-    gen_model.expr_3 = gen_model.sum((q[(i,j,k)]* gen_model.I[(i,j,k)]) for i,j,k in arcs)
-    # turn cost calculation is wrong
-    gen_model.expr_4 = gen_model.sum( (q[(i,0,k)] * gen_model.I[(i,0,k)]) for i,k in edges)
-    #####
     
+    gen_model.expr_2 = gen_model.sum( gen_model.duals[i] * gen_model.x[(i,j)] for i,j in edges)
+    
+    
+    gen_model.expr_3 = gen_model.sum((q[(i,j,k)]* gen_model.I[(i,j,k)]) for i,j,k in arcs)
+    
+    gen_model.expr_4 = gen_model.sum( (q[(i,0,k)] * gen_model.I[(i,0,k)]) for i,k in edges)
+
+
     gen_model.expr = gen_model.expr_1 - gen_model.expr_2 + gen_model.expr_3 - gen_model.expr_4
     gen_model.labelCost = gen_model.expr + gen_model.expr_2
     gen_model.energyCost = gen_model.expr_1 + gen_model.expr_3 - gen_model.expr_4
