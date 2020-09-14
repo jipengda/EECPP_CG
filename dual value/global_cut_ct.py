@@ -169,7 +169,7 @@ def make_eecpp_generation_model(colNumber, rowNumber, coord_x, coord_y,**kwargs)
         else:
             pass
     turning_cost = 7
-    seq=[-2,-1,1,2]
+    seq=[-10,-9,-8,-7,-6,-5,-4,-3-2,-1,0,1,2,3,4,5,6,7,8,9,10]
     fixed_turn_gamma=0.0173
     turn_factor=0.0001
     for i,j,k in arcs:
