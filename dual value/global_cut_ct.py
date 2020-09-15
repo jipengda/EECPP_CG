@@ -49,7 +49,7 @@ for node in range(1, nodesNumber):
     unit_basic_pool.append(depot)
     unit_basic_pool.append(node)
     unit_basic_pool.append(depot)
-    cost = totalCost_calculation_by_set.totalCost_calculation_by_set(unit_basic_pool, coord_x,coord_y,D)
+    cost = totalCost_calculation_by_set.totalCost_calculation_by_set(distance_lambda,turn_gamma,unit_basic_pool, coord_x,coord_y,D)
     unit_basic_pool.append([cost])
     basic_pool.append(unit_basic_pool)
         
