@@ -39,6 +39,7 @@ The format of pool is like [0, node, 0, [cost]]
 # turning cost is 0, from totalCost_calculation_by_set file we know.
 import totalCost_calculation_by_set
 
+
 nodesNumber = colNumber * rowNumber
 D = Data.create_D(nodesNumber, coord_x, coord_y)
 depot = 0
