@@ -30,9 +30,6 @@ def angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y):
     return theta_degrees
 
 def totalCost_calculation_by_set(distance_lambda,turn_gamma,optimalSet, coord_x, coord_y, D):
-    distance_lambda = 0.1164
-    turn_gamma = 0.0173
-    turn_gamma = 0.015 # so turning cost is 0
     totalCost = 0
     lastNode=0
     newNode=optimalSet[1]
