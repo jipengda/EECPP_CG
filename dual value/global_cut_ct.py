@@ -26,6 +26,8 @@ rowNumber=3
 
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
+distance_lambda = 0.1164
+turn_gamma = 0.0174
 #
 
 #------------------------------------------------------------------------------
