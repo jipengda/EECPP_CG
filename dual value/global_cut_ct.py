@@ -59,7 +59,7 @@ label_table = basic_pool
 #------------------------------------------------------------------------------
 nodesNumber = colNumber * rowNumber
 distance_lambda = 0.1164
-turn_gamma = 0.0173
+turn_gamma = 0.0174
 departurePoint = 0
 radians_to_degrees = 180/(math.pi)
 obstacles=[]
@@ -88,7 +88,7 @@ seq=[-10,-9,-8,-7,-6,-5,-4,-3-2,-1,0,1,2,3,4,5,6,7,8,9,10]
 fixed_turn_gamma=0.0173
 turn_factor=0.0001    
 for i,j,k in arcs:
-    turn_gamma = fixed_turn_gamma + random.choice(seq) * turn_factor
+#    turn_gamma = fixed_turn_gamma + random.choice(seq) * turn_factor
     theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
     theta_degrees=theta_radians*radians_to_degrees
     turning_cost=turn_gamma*theta_degrees
