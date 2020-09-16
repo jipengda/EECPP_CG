@@ -563,7 +563,9 @@ The format of pool is like [0, node, 0, [cost]]
 
 depot = departurePoint
 basic_pool=[]
-for node in range(1, nodesNumber):
+# Nodes will replace (1,nodesNumber)
+for node in Nodes:
+#for node in range(1, nodesNumber):
     unit_basic_pool=[]
     unit_basic_pool.append(depot)
     unit_basic_pool.append(node)
