@@ -506,7 +506,7 @@ departurePoint = 0
 nodesNumber = colNumber * rowNumber
 
 radians_to_degrees = 180/(math.pi)
-obstacles=[]
+obstacles=[4]
 Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!= departurePoint]
 NodesAndDeparturePoint = Nodes + [departurePoint]
 AllNodes= NodesAndDeparturePoint + obstacles
@@ -568,7 +568,7 @@ for node in range(1, nodesNumber):
     unit_basic_pool.append(depot)
     unit_basic_pool.append(node)
     unit_basic_pool.append(depot)
-    cost = function.totalCost_calculation(distance_lambda,turn_gamma,unit_basic_pool, coord_x,coord_y,D)
+    cost = function.totalCost_calculation(distance_lambda,turn_gamma,unit_basic_pool, colNumber, rowNumber)
     unit_basic_pool.append([cost])
     basic_pool.append(unit_basic_pool)
         
