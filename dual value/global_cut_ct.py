@@ -499,33 +499,6 @@ D = Data.create_D(nodesNumber, coord_x, coord_y)
 departurePoint = 0
 #
 
-#------------------------------------------------------------------------------
-
-#add automatic_basic_pool part
-#------------------------------------------------------------------------------
-"""
-This file is going to generate basic pool automatically for the map defined
-
-The format of pool is like [0, node, 0, [cost]]
-"""
-# turning cost is 0, from totalCost_calculation_by_set file we know.
-# we may need delete or add somthing to make function.totalCost_calculation can deal
-# with case where there is obstacle
-# use dijksta for obstalce may not be good enough
-# but it can be a choice
-
-depot = departurePoint
-basic_pool=[]
-for node in range(1, nodesNumber):
-    unit_basic_pool=[]
-    unit_basic_pool.append(depot)
-    unit_basic_pool.append(node)
-    unit_basic_pool.append(depot)
-    cost = function.totalCost_calculation(distance_lambda,turn_gamma,unit_basic_pool, coord_x,coord_y,D)
-    unit_basic_pool.append([cost])
-    basic_pool.append(unit_basic_pool)
-        
-label_table = basic_pool
 
 #------------------------------------------------------------------------------
 #Data
@@ -571,6 +544,36 @@ for i,j,k in arcs:
     else:
         pass
     q[(i,j,k)]=turning_cost
+    
+    
+    
+#------------------------------------------------------------------------------
+#add automatic_basic_pool part
+#------------------------------------------------------------------------------
+"""
+This file is going to generate basic pool automatically for the map defined
+
+The format of pool is like [0, node, 0, [cost]]
+"""
+# turning cost is 0, from totalCost_calculation_by_set file we know.
+# we may need delete or add somthing to make function.totalCost_calculation can deal
+# with case where there is obstacle
+# use dijksta for obstalce may not be good enough
+# but it can be a choice
+
+depot = departurePoint
+basic_pool=[]
+for node in range(1, nodesNumber):
+    unit_basic_pool=[]
+    unit_basic_pool.append(depot)
+    unit_basic_pool.append(node)
+    unit_basic_pool.append(depot)
+    cost = function.totalCost_calculation(distance_lambda,turn_gamma,unit_basic_pool, coord_x,coord_y,D)
+    unit_basic_pool.append([cost])
+    basic_pool.append(unit_basic_pool)
+        
+label_table = basic_pool
+
 
 if __name__ == '__main__':
     s = eecpp_solve_default()
