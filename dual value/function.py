@@ -187,7 +187,9 @@ def dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colN
     firstnode = optimalSet[0]
     secondnode = optimalSet[1]
     lastnode = optimalSet[2]
-    totalCost = c[(firstnode, secondnode)] * 2 + q[firstnode,secondnode,lastnode]
+    distanceCost  = c[firstnode,secondnode] * 2
+    turnCost = q[firstnode, secondnode, lastnode]
+    totalCost = distanceCost + turnCost
     return totalCost
 # the End
 # cost = c[(0,node)] * 2 + q[(0, node, 0)]
