@@ -29,29 +29,31 @@ def angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y):
     theta_degrees=radians_to_degrees*theta_radians
     return theta_degrees
 
-def totalCost_calculation(distance_lambda, turn_gamma, optimalSet, coord_x, coord_y, D):
+def totalCost_calculation(distance_lambda, turn_gamma, optimalSet,colNumber, rowNumber):
     totalCost = 0
-    lastNode=0
-    newNode=optimalSet[1]
-    turnCost=0
-    distanceCost= distance_lambda * D[lastNode][newNode]
-    totalCost = turnCost + distanceCost
-    length=len(optimalSet)
-    for i in range(2, length):
-        newNode = optimalSet[i]
-        lastNode = optimalSet[i-1]
-        second_to_lastNode = optimalSet[i-2]
-        go = lastNode
-        to = newNode
-        turnCost = turn_gamma * angle(second_to_lastNode, go, to, coord_x, coord_y)
-        distanceCost = distance_lambda * D[go][to]
-        totalCost=totalCost+turnCost + distanceCost
+#    lastNode=0
+#    newNode=optimalSet[1]
+#    turnCost=0
+#    distanceCost= distance_lambda * D[lastNode][newNode]
+#    totalCost = turnCost + distanceCost
+#    length=len(optimalSet)
+#    for i in range(2, length):
+#        newNode = optimalSet[i]
+#        lastNode = optimalSet[i-1]
+#        second_to_lastNode = optimalSet[i-2]
+#        go = lastNode
+#        to = newNode
+#        turnCost = turn_gamma * angle(second_to_lastNode, go, to, coord_x, coord_y)
+#        distanceCost = distance_lambda * D[go][to]
+#        totalCost=totalCost+turnCost + distanceCost
+    
+    totalCost= dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colNumber,rowNumber)
     return totalCost
 
 #------------------------------------------------------------------------------
 # dijkstra part for case where there is obstacle
 #------------------------------------------------------------------------------
-def dijkstra_totalCost_calculation():
+def dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colNumber, rowNumber):
     import sys
     import Common_module_smile
     class Graph():
@@ -78,7 +80,7 @@ def dijkstra_totalCost_calculation():
         # Function that implements Dijkstra's single source
         # shortest path algorithm 
         def dijkstra(self, src):
-            garma = 0.0173
+            turn_gamma = 0.0173
             dist = [sys.maxsize] * self.V
             pre = [src] * self.V
             path = [[] for i in range(self.V)]
@@ -106,7 +108,7 @@ def dijkstra_totalCost_calculation():
                     if last == current:
                         turnCost = 0
                     else:
-                        turnCost = garma * Common_module_smile.angle(last, current, v, self.V)
+                        turnCost = turn_gamma * Common_module_smile.angle(last, current, v, self.V)
                     if self.graph[u][v] > 0:
                         if sptSet[v] == False:
                             if dist[v] >  dist[u] + self.graph[u][v] + turnCost:
@@ -128,13 +130,11 @@ def dijkstra_totalCost_calculation():
             return path
         
     # Driver program
-    colNumber = 3
-    rowNumber = 3
     vertices = colNumber * rowNumber
     obstacles = [4]
     # define distance cost coefficient and turn cost coefficient
-    lamda = 0.1164
-    garma = 0.0173
+    distance_lambda = 0.1164
+    turn_gamma = 0.0173
     
     # Define nodes in vertices any node except obstacle
     nodes = [node for node in range(vertices) if node not in obstacles]
@@ -174,7 +174,7 @@ def dijkstra_totalCost_calculation():
             real_k = matrix_path_minPath[j][k][1]
         else:
             real_k = matrix_path_minPath[j][k][0]
-        turn_cost = garma * Common_module_smile.angle(real_i, real_j, real_k, vertices)
+        turn_cost = turn_gamma * Common_module_smile.angle(real_i, real_j, real_k, vertices)
         q[(i,j,k)] = turn_cost
         
     edges = [(i,j) for i in nodes for j in nodes]
@@ -183,6 +183,11 @@ def dijkstra_totalCost_calculation():
         c[(i,j)] = matrix_cost_minPath[i][j]   
     # the End
     # cost = c[(0,node)] * 2 + q[(0, node, 0)]
-    return matrix_path_minPath 
+    totalCost = 0
+    firstnode = optimalSet[0]
+    secondnode = optimalSet[1]
+    lastnode = optimalSet[2]
+    totalCost = c[(firstnode, secondnode)] * 2 + q[firstnode,secondnode,lastnode]
+    return totalCost
 # the End
 # cost = c[(0,node)] * 2 + q[(0, node, 0)]
