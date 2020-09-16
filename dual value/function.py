@@ -47,3 +47,8 @@ def totalCost_calculation(distance_lambda, turn_gamma, optimalSet, coord_x, coor
         distanceCost = distance_lambda * D[go][to]
         totalCost=totalCost+turnCost + distanceCost
     return totalCost
+
+#------------------------------------------------------------------------------
+# dijkstra part for case where there is obstacle
+#------------------------------------------------------------------------------
+    
