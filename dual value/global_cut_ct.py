@@ -509,7 +509,10 @@ This file is going to generate basic pool automatically for the map defined
 The format of pool is like [0, node, 0, [cost]]
 """
 # turning cost is 0, from totalCost_calculation_by_set file we know.
-
+# we may need delete or add somthing to make function.totalCost_calculation can deal
+# with case where there is obstacle
+# use dijksta for obstalce may not be good enough
+# but it can be a choice
 
 depot = departurePoint
 basic_pool=[]
