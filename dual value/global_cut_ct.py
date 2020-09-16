@@ -487,16 +487,20 @@ def eecpp_solve(c,q,colNumber, rowNumber, label_table, coord_x, coord_y, **kwarg
 #------------------------------------------------------------------------------
 # main
 #------------------------------------------------------------------------------
-colNumber=4
-rowNumber=4
+colNumber=3
+rowNumber=3
 
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
 distance_lambda = 0.1164
 turn_gamma = 0.0174
+nodesNumber = colNumber * rowNumber
+D = Data.create_D(nodesNumber, coord_x, coord_y)
+departurePoint = 0
 #
 
 #------------------------------------------------------------------------------
+
 #add automatic_basic_pool part
 #------------------------------------------------------------------------------
 """
@@ -506,9 +510,8 @@ The format of pool is like [0, node, 0, [cost]]
 """
 # turning cost is 0, from totalCost_calculation_by_set file we know.
 
-nodesNumber = colNumber * rowNumber
-D = Data.create_D(nodesNumber, coord_x, coord_y)
-depot = 0
+
+depot = departurePoint
 basic_pool=[]
 for node in range(1, nodesNumber):
     unit_basic_pool=[]
@@ -525,9 +528,7 @@ label_table = basic_pool
 #Data
 #------------------------------------------------------------------------------
 nodesNumber = colNumber * rowNumber
-distance_lambda = 0.1164
-turn_gamma = 0.0174
-departurePoint = 0
+
 radians_to_degrees = 180/(math.pi)
 obstacles=[]
 Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!= departurePoint]
