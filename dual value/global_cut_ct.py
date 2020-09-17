@@ -570,7 +570,7 @@ for node in Nodes:
     unit_basic_pool.append(depot)
     unit_basic_pool.append(node)
     unit_basic_pool.append(depot)
-    cost = function.totalCost_calculation(distance_lambda,turn_gamma,unit_basic_pool, colNumber, rowNumber)
+    cost = function.totalCost_calculation(distance_lambda,turn_gamma,unit_basic_pool, colNumber, rowNumber, obstacles)
     unit_basic_pool.append([cost])
     basic_pool.append(unit_basic_pool)
         
