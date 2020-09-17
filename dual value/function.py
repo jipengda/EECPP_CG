@@ -131,7 +131,7 @@ def dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colN
         
     # Driver program
     vertices = colNumber * rowNumber
-    obstacles = [4]
+#    obstacles = [4]
     # define distance cost coefficient and turn cost coefficient
     distance_lambda = 0.1164
     turn_gamma = 0.0173
