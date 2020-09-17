@@ -233,11 +233,11 @@ def subproblem_modified(gen_model, alpha):
 #------------------------------------------------------------------------------
 # MASTER PROBLEM MIP MODELING
 #------------------------------------------------------------------------------             
-def make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
+def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwargs):
     label_number = len(label_table)
     nodesNumber= colNumber * rowNumber
     departurePoint = 0
-    obstacles = []
+#    obstacles = []
     ##
     C=[0] * label_number
     for l in range(label_number):
@@ -366,7 +366,7 @@ def make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y,**kwa
 # COLUMN GENERATION ITERATIONS
 #--------------------------------------------------------------------------------------
 def eecpp_solve(c,q,obstacles,colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
-    master_model = make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs)
+    master_model = make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwargs)
     
     gen_model = make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y, **kwargs)
     
