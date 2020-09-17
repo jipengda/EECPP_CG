@@ -487,8 +487,8 @@ def eecpp_solve(c,q,colNumber, rowNumber, label_table, coord_x, coord_y, **kwarg
 #------------------------------------------------------------------------------
 # main
 #------------------------------------------------------------------------------
-colNumber=3
-rowNumber=3
+colNumber=4
+rowNumber=4
 
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
@@ -506,7 +506,7 @@ departurePoint = 0
 nodesNumber = colNumber * rowNumber
 
 radians_to_degrees = 180/(math.pi)
-obstacles=[4]
+obstacles=[4,8,9,12,13]
 Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!= departurePoint]
 NodesAndDeparturePoint = Nodes + [departurePoint]
 AllNodes= NodesAndDeparturePoint + obstacles
@@ -516,7 +516,7 @@ c={(i,j):0 for i,j in edges}
 q={(i,j,k):0 for i,j,k in arcs}
 distance={(i,j):0 for i,j in edges}
 for i,j in edges:
-    distanceValue=np.hypot(coord_x[i]-coord_x[j],coord_y[i]-coord_y[j])
+    distanceValue=np.hypot(coord_x[i]-coord_x[j],coord_y[i]-coord_y[j]) # it is wrong, it does not consider the obstacle between nodes.
     distance[(i,j)]=distanceValue
     distance_cost = distance_lambda * distanceValue
     c[(i,j)] = distance_cost
