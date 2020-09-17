@@ -237,8 +237,7 @@ def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwar
     label_number = len(label_table)
     nodesNumber= colNumber * rowNumber
     departurePoint = 0
-#    obstacles = []
-    ##
+
     C=[0] * label_number
     for l in range(label_number):
         C[l] = label_table[l][-1][0]
@@ -263,8 +262,7 @@ def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwar
     
 
     m.node_visit_cts=[]
-    #
-    ##########
+
     for node in m.nodes:
         if node in obstacles:
             node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) >= 0
