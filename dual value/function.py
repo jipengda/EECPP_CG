@@ -29,7 +29,7 @@ def angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y):
     theta_degrees=radians_to_degrees*theta_radians
     return theta_degrees
 
-def totalCost_calculation(distance_lambda, turn_gamma, optimalSet,colNumber, rowNumber):
+def totalCost_calculation(distance_lambda, turn_gamma, optimalSet,colNumber, rowNumber, obstacles):
     totalCost = 0
 #    lastNode=0
 #    newNode=optimalSet[1]
@@ -47,13 +47,13 @@ def totalCost_calculation(distance_lambda, turn_gamma, optimalSet,colNumber, row
 #        distanceCost = distance_lambda * D[go][to]
 #        totalCost=totalCost+turnCost + distanceCost
     
-    totalCost= dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colNumber,rowNumber)
+    totalCost= dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colNumber,rowNumber, obstacles)
     return totalCost
 
 #------------------------------------------------------------------------------
 # dijkstra part for case where there is obstacle
 #------------------------------------------------------------------------------
-def dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colNumber, rowNumber):
+def dijkstra_totalCost_calculation(distance_lambda, turn_gamma, optimalSet, colNumber, rowNumber, obstacles):
     import sys
     import Common_module_smile
     class Graph():
