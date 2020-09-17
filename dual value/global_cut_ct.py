@@ -30,11 +30,11 @@ def eecpp_update_duals(gen_model, new_duals):
     gen_model.minimize(gen_model.expr)
     return gen_model
 
-def add_pattern_to_master_model(master_model, colNumber, rowNumber, x_values, label_cost, outF):
+def add_pattern_to_master_model(master_model, obstacles, colNumber, rowNumber, x_values, label_cost, outF):
     
     nodesNumber = colNumber * rowNumber
     departurePoint = 0
-    obstacles = []
+#    obstacles = []
     Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!=departurePoint]
     NodesAndDeparturePoint = Nodes + [departurePoint]
     edges = [(i,j) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint]
@@ -86,7 +86,7 @@ def add_pattern_to_master_model(master_model, colNumber, rowNumber, x_values, la
 # SUPPLEMENTARY FUNCTIONS
 #----------------------------------------------------------------------------------
 def eecpp_solve_default(**kwargs):
-    return eecpp_solve(c,q,colNumber, rowNumber, label_table,coord_x, coord_y, **kwargs)
+    return eecpp_solve(c,q,obstacles, colNumber, rowNumber, label_table,coord_x, coord_y, **kwargs)
 
 def eecpp_print_solution(eecpp_model, outF):
     labels = eecpp_model.labels
@@ -365,7 +365,7 @@ def make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y,**kwa
 #--------------------------------------------------------------------------------------
 # COLUMN GENERATION ITERATIONS
 #--------------------------------------------------------------------------------------
-def eecpp_solve(c,q,colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
+def eecpp_solve(c,q,obstacles,colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
     master_model = make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs)
     
     gen_model = make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y, **kwargs)
@@ -429,7 +429,7 @@ def eecpp_solve(c,q,colNumber, rowNumber, label_table, coord_x, coord_y, **kwarg
         rc_cost="rc_cost:"+str(rc_cost)
         outF.write(rc_cost)
         outF.write("\n")
-        master_model=add_pattern_to_master_model(master_model, colNumber, rowNumber, gen_model.x, label_cost, outF)
+        master_model=add_pattern_to_master_model(obstacles, master_model, colNumber, rowNumber, gen_model.x, label_cost, outF)
         
 # put it in the loop every time we get a optimal solution for master model
 # check optimal solution rather than intermediate solution
