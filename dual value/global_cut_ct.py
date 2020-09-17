@@ -280,7 +280,7 @@ def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwar
 #--------------------------------------------------------------------------------
 #SUBPROBLEM MIP MODELING
 #--------------------------------------------------------------------------------     
-def make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y,**kwargs):
+def make_eecpp_generation_model(obstacles, c,q,colNumber, rowNumber, coord_x, coord_y,**kwargs):
     nodesNumber = colNumber * rowNumber
     duals = [0] * nodesNumber
     pi = duals
@@ -368,7 +368,7 @@ def make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y,**kwa
 def eecpp_solve(c,q,obstacles,colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
     master_model = make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwargs)
     
-    gen_model = make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y, **kwargs)
+    gen_model = make_eecpp_generation_model(obstacles, c,q,colNumber, rowNumber, coord_x, coord_y, **kwargs)
     
     tic = time.time()
     
