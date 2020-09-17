@@ -295,7 +295,7 @@ def make_eecpp_generation_model(c,q,colNumber, rowNumber, coord_x, coord_y,**kwa
     distanceValue=0
     theta_radians=0
     theta_degrees=0
-    obstacles = []
+    obstacles = [4,8,9,12,13] # obstacles is wrong
     Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!=departurePoint]
     # Except departurePoint( arrival point is same as departurePoint) and obstacles
     NodesAndDeparturePoint = Nodes + [departurePoint]
