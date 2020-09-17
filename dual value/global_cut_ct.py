@@ -34,7 +34,7 @@ def add_pattern_to_master_model(master_model, obstacles, colNumber, rowNumber, x
     
     nodesNumber = colNumber * rowNumber
     departurePoint = 0
-#    obstacles = []
+
     Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!=departurePoint]
     NodesAndDeparturePoint = Nodes + [departurePoint]
     edges = [(i,j) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint]
@@ -429,7 +429,8 @@ def eecpp_solve(c,q,obstacles,colNumber, rowNumber, label_table, coord_x, coord_
         rc_cost="rc_cost:"+str(rc_cost)
         outF.write(rc_cost)
         outF.write("\n")
-        master_model=add_pattern_to_master_model(obstacles, master_model, colNumber, rowNumber, gen_model.x, label_cost, outF)
+        master_model=add_pattern_to_master_model(master_model,obstacles,
+                                                 colNumber, rowNumber, gen_model.x, label_cost, outF)
         
 # put it in the loop every time we get a optimal solution for master model
 # check optimal solution rather than intermediate solution
