@@ -255,7 +255,7 @@ def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwar
     m.labels = labels
     m.label_table = label_table
     m.label_number = label_number
-    m.nodes = [i for i in range(nodesNumber)]
+    m.nodes = [i for i in range(1,nodesNumber)] # it can be tricked sometime, so node 0 must be excluded.
     m.x = m.continuous_var_dict(m.labels,lb=0, ub=1, name="visit") # determine if the label is selected(x=1) or not(x=0)
     # minimize total cost
     m.visiting_cost = m.sum( (C[l] * m.x[l]) for l in labels )
@@ -266,7 +266,7 @@ def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwar
 
     for node in m.nodes:
         if node in obstacles:
-            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) == 0
+            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) >= 0
         else:
             node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) == 1
         node_visit_ct_name = 'ct_visit{0!s}'.format(node)
