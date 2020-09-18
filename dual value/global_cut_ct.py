@@ -15,6 +15,7 @@ import math
 import matplotlib.pyplot as plt
 import time
 import function
+import random
 
 #------------------------------------------------------------------------------
 # def functions
@@ -267,7 +268,7 @@ def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwar
         if node in obstacles:
             node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) >= 0
         else:
-            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) >= 1
+            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) == 1
         node_visit_ct_name = 'ct_visit{0!s}'.format(node)
         m.node_visit_cts.append(node_visit_ct)
     m.add_constraints(m.node_visit_cts)
@@ -486,13 +487,13 @@ def eecpp_solve(c,q,obstacles,colNumber, rowNumber, label_table, coord_x, coord_
 #------------------------------------------------------------------------------
 # main
 #------------------------------------------------------------------------------
-colNumber=4
-rowNumber=4
+colNumber=5
+rowNumber=5
 
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
 distance_lambda = 0.1164
-turn_gamma = 0.0174
+turn_gamma = 0.0173
 nodesNumber = colNumber * rowNumber
 D = Data.create_D(nodesNumber, coord_x, coord_y)
 departurePoint = 0
@@ -505,7 +506,7 @@ departurePoint = 0
 nodesNumber = colNumber * rowNumber
 
 radians_to_degrees = 180/(math.pi)
-obstacles=[4,8,9,12,13]
+obstacles=[4,5,9,10,11,14,15,16,17,20,21,22,23,24]
 Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!= departurePoint]
 NodesAndDeparturePoint = Nodes + [departurePoint]
 AllNodes= NodesAndDeparturePoint + obstacles
