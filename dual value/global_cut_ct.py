@@ -266,7 +266,7 @@ def make_eecpp_master_model(obstacles, label_table, colNumber, rowNumber, **kwar
 
     for node in m.nodes:
         if node in obstacles:
-            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) >= 0
+            node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) == 0
         else:
             node_visit_ct = m.sum(m.x[l] * a[l][node] for l in labels) == 1
         node_visit_ct_name = 'ct_visit{0!s}'.format(node)
