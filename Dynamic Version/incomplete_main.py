@@ -188,7 +188,7 @@ def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
         curr = master_model.objective_value
         duals = master_model.dual_values(master_model.node_visit_cts)
         # there is still more to be done~~
-        one_candidate=incomplete_DP.obtain_one_candidate(D, duals, coord_x, coord_y, nodesNumber, Battery_capacity_constraint, departurePoint, obstacles) #add obstacle(m,n)
+        one_candidate=incomplete_DP.obtain_one_candidate(q,distance,D, duals, coord_x, coord_y, nodesNumber, Battery_capacity_constraint, departurePoint, obstacles) #add obstacle(m,n)
         compare = []
         if one_candidate == compare:
             print("Fails, one_candidate doesn't exist")
