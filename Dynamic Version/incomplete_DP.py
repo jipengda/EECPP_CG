@@ -21,7 +21,7 @@ turn_gamma = 0.0173
 # turn_gamma = 0.0173 kj/deg
 # totalCost renamed to reduced cost
 # It is not engouth, we also need defeine totalCost individually.
-def obtain_one_candidate(D,duals, coord_x, coord_y, nodesNumber, Battery_capacity_constraint, departurePoint, obstacles):
+def obtain_one_candidate(q,distance,D,duals, coord_x, coord_y, nodesNumber, Battery_capacity_constraint, departurePoint, obstacles):
 # this function obtain_one_candidate intends to get an one_candidate which hope to optimize master model
 # this function don't will return all_quailied_labels, which is not the requirement.
     global distance_lambda
@@ -267,13 +267,14 @@ def RSIntersection(r_xmin,r_xmax,r_ymin, r_ymax, nodeA, nodeB):
 # At the first level, we have the set S and its load y(S)
 # At the second level,for the given set S, we have the terminal nodes i belongs to S used to form the states (S,i)
 # At the third level, for a state (S,i), the reduced set of lables H(S,i) is stored.
-def Battery_capacity_limit_check(second_to_lastNode, lastNode, newNode, coord_x, coord_y, D , totalCost, Battery_capacity_constraint ):
+def Battery_capacity_limit_check(q,distance,second_to_lastNode, lastNode, newNode, coord_x, coord_y, D , totalCost, Battery_capacity_constraint ):
     global distance_lambda
     global turn_gamma
     futureCost=0
     go=lastNode
     to=newNode
-    turnCost=turn_gamma * angle(second_to_lastNode, go, to, coord_x, coord_y)
+#    turnCost=turn_gamma * angle(second_to_lastNode, go, to, coord_x, coord_y)
+    turnCost = q[second_to_lastNode, go, to]
     #judge turnCost nan or not nan
     flag = math.isnan(turnCost)
     #end
@@ -281,7 +282,8 @@ def Battery_capacity_limit_check(second_to_lastNode, lastNode, newNode, coord_x,
         turnCost=0
     else:
         turnCost=turnCost
-    distanceCost=distance_lambda * D[go][to]
+#    distanceCost=distance_lambda * D[go][to]
+    distanceCost=distance_lambda * distance[go,to]
     totalCost=totalCost+turnCost + distanceCost
     futureCost = totalCost
     if futureCost > Battery_capacity_constraint:
