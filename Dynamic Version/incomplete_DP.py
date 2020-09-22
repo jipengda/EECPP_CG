@@ -67,8 +67,10 @@ def obtain_one_candidate(q,distance,D,duals, coord_x, coord_y, nodesNumber, Batt
                 if pass0 is True:
                     permission = Battery_capacity_limit_check(q,distance,lastNode, newNode, departurePoint, coord_x, coord_y, D, totalCost, Battery_capacity_constraint)
                     if permission is True:
-                        turnCost = turn_gamma * angle(lastNode, newNode, departurePoint, coord_x, coord_y)
-                        distanceCost=distance_lambda * D[newNode][departurePoint]
+#                        turnCost = turn_gamma * angle(lastNode, newNode, departurePoint, coord_x, coord_y)
+                        turnCost=q[lastNode, newNode, departurePoint]
+#                        distanceCost=distance_lambda * D[newNode][departurePoint]
+                        distanceCost=distance_lambda* distance[newNode, departurePoint]
                         totalCost = totalCost + turnCost + distanceCost
                         routeCost = duals[newNode] * 1
                         reducedCost=reducedCost+turnCost + distanceCost - routeCost 
@@ -126,8 +128,10 @@ def obtain_one_candidate(q,distance,D,duals, coord_x, coord_y, nodesNumber, Batt
                             feasible_label = list(feasible_set)
                             go=lastNode
                             to=newNode
-                            turnCost=turn_gamma * angle(second_to_lastNode, go, to, coord_x, coord_y)
-                            distanceCost=distance_lambda * D[go][to]
+#                            turnCost=turn_gamma * angle(second_to_lastNode, go, to, coord_x, coord_y)
+                            turnCost=q[second_to_lastNode, go, to]
+#                            distanceCost=distance_lambda * D[go][to]
+                            distanceCost = distance_lambda * distance[go, to]
                             # reducedCost
                             # define a function calculating sum of route cost in label
                             totalCost = totalCost + turnCost + distanceCost
@@ -145,8 +149,10 @@ def obtain_one_candidate(q,distance,D,duals, coord_x, coord_y, nodesNumber, Batt
             if pass0 is True:
                 permission = Battery_capacity_limit_check(q,distance,second_to_lastNode, lastNode, newNode, coord_x, coord_y, D, totalCost, Battery_capacity_constraint)
                 if permission is True:
-                    turnCost = turn_gamma * angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y)
-                    distanceCost = distance_lambda * D[lastNode][newNode]
+#                    turnCost = turn_gamma * angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y)
+                    turnCost = q[second_to_lastNode, lastNode, newNode]
+#                    distanceCost = distance_lambda * D[lastNode][newNode]
+                    distanceCost=distance_lambda * distance[lastNode, newNode]
                     # reducedCost
                     totalCost = feasible_set[-1][0] + turnCost + distanceCost
                     label = [totalCost]
