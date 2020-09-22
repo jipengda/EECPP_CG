@@ -48,14 +48,15 @@ def obtain_one_candidate(D,duals, coord_x, coord_y, nodesNumber, Battery_capacit
         second_to_lastNode=departurePoint # This is special case for k=1 iteration
         pass0 = Elimination_criteria_based_on_obstacle(obstacles, lastNode, newNode)
         if pass0 is True:
-            pass1 = Battery_capacity_limit_check(second_to_lastNode, lastNode, newNode, coord_x, coord_y, D , totalCost, Battery_capacity_constraint )
+            pass1 = Battery_capacity_limit_check(q,distance,second_to_lastNode, lastNode, newNode, coord_x, coord_y, D , totalCost, Battery_capacity_constraint )
             if pass1 is True:
                 feasible_set.append(newNode)
                 feasible_label = list(feasible_set)
                 go=lastNode
                 to=newNode
                 turnCost=0
-                distanceCost=distance_lambda*D[go][to]
+#                distanceCost=distance_lambda*D[go][to]
+                distanceCost = distance_lambda * distance[go, to]
                 totalCost = turnCost + distanceCost
                 routeCost = duals[departurePoint] * 1
                 reducedCost=turnCost+distanceCost - routeCost
@@ -64,7 +65,7 @@ def obtain_one_candidate(D,duals, coord_x, coord_y, nodesNumber, Battery_capacit
                 sets.append(feasible_set)
                 pass0 = Elimination_criteria_based_on_obstacle(obstacles, newNode, departurePoint)
                 if pass0 is True:
-                    permission = Battery_capacity_limit_check(lastNode, newNode, departurePoint, coord_x, coord_y, D, totalCost, Battery_capacity_constraint)
+                    permission = Battery_capacity_limit_check(q,distance,lastNode, newNode, departurePoint, coord_x, coord_y, D, totalCost, Battery_capacity_constraint)
                     if permission is True:
                         turnCost = turn_gamma * angle(lastNode, newNode, departurePoint, coord_x, coord_y)
                         distanceCost=distance_lambda * D[newNode][departurePoint]
@@ -112,7 +113,7 @@ def obtain_one_candidate(D,duals, coord_x, coord_y, nodesNumber, Battery_capacit
                 totalCost = label[0]
                 pass0 = Elimination_criteria_based_on_obstacle(obstacles, lastNode, newNode)
                 if pass0 is True:
-                    pass1 = Battery_capacity_limit_check(second_to_lastNode, lastNode, newNode, coord_x, coord_y, D , totalCost, Battery_capacity_constraint )
+                    pass1 = Battery_capacity_limit_check(q,distance,second_to_lastNode, lastNode, newNode, coord_x, coord_y, D , totalCost, Battery_capacity_constraint )
                     if pass1 is False:
                         pass
                     else:
@@ -142,7 +143,7 @@ def obtain_one_candidate(D,duals, coord_x, coord_y, nodesNumber, Battery_capacit
             totalCost = feasible_set[-1][0]
             pass0 = Elimination_criteria_based_on_obstacle(obstacles, lastNode, newNode)
             if pass0 is True:
-                permission = Battery_capacity_limit_check(second_to_lastNode, lastNode, newNode, coord_x, coord_y, D, totalCost, Battery_capacity_constraint)
+                permission = Battery_capacity_limit_check(q,distance,second_to_lastNode, lastNode, newNode, coord_x, coord_y, D, totalCost, Battery_capacity_constraint)
                 if permission is True:
                     turnCost = turn_gamma * angle(second_to_lastNode, lastNode, newNode, coord_x, coord_y)
                     distanceCost = distance_lambda * D[lastNode][newNode]
