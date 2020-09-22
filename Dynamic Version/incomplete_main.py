@@ -20,15 +20,74 @@ import math
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import function
+import random
 
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-colNumber=3
-rowNumber=3
 
+
+
+
+#--------------------------------Data-----------------------------------------
+agentNumber = 10
+colNumber=4
+rowNumber=4
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
+Battery_capacity_constraint = 6.0 # 6.0 is test
+nodesNumber=rowNumber * colNumber
+sideLength=1
+departurePoint=0
+obstacles=[4,8,9,12,13] # no obstacle
+Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!=departurePoint]
+NodesAndDeparturePoint=[i for i in range(nodesNumber)]
+
+
+
+
+#-------------------------------get q and sitance parameter--------------------
+D=Data.create_D(nodesNumber, coord_x, coord_y)
+radians_to_degrees=180/(math.pi)
+Nodes=[i for i in range(nodesNumber) if i not in obstacles and i!= departurePoint]
+NodesAndDeparturePoint = Nodes + [departurePoint]
+edges=[(i,j) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint]
+arcs=[(i,j,k) for i in NodesAndDeparturePoint for j in NodesAndDeparturePoint for k in NodesAndDeparturePoint]
+distance_lambda = 0.1164
+c={(i,j):0 for i,j in edges}
+q={(i,j,k):0 for i,j,k in arcs}
+distance={(i,j):0 for i,j in edges}
+for i,j in edges:
+    distanceValue=np.hypot(coord_x[i]-coord_x[j],coord_y[i]-coord_y[j]) # it is wrong, it does not consider the obstacle between nodes.
+    distance[(i,j)]=distanceValue
+    distance_cost = distance_lambda * distanceValue
+    c[(i,j)] = distance_cost
+    
+
+for o,p in edges:
+    View = check_obstacle(obstacles, o, p, colNumber, rowNumber)
+    if View == 0:
+        c[(o,p)] = math.inf
+    else:
+        pass
+    
+seq=[-10,-9,-8,-7,-6,-5,-4,-3-2,-1,0,1,2,3,4,5,6,7,8,9,10]
+fixed_turn_gamma=0.0173
+turn_factor=0.0001 
+random.seed(10)   
+for i,j,k in arcs:
+    turn_gamma = fixed_turn_gamma + random.choice(seq) * turn_factor
+    theta_radians=math.pi-np.arccos(round((distance[i,j]**2+distance[j,k]**2-distance[i,k]**2)/(2*distance[i,j]*distance[j,k]),2))
+    theta_degrees=theta_radians*radians_to_degrees
+    turning_cost=turn_gamma*theta_degrees
+    q[(i,j,k)]=turning_cost
+    a=math.isnan(turning_cost)
+    if a is True:
+        turning_cost=0
+    else:
+        pass
+    q[(i,j,k)]=turning_cost
+
 
 #------------------------------------------------------------------------------
 #add automatic_basic_pool part
@@ -43,8 +102,7 @@ The format of pool is like [0, node, 0, [cost]]
 # with case where there is obstacle
 # use dijksta for obstalce may not be good enough
 # but it can be a choice
-q=
-distance=
+
 depot = departurePoint
 basic_pool=[]
 # Nodes will replace (1,nodesNumber)
