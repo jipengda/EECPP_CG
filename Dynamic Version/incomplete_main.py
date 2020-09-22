@@ -43,7 +43,8 @@ The format of pool is like [0, node, 0, [cost]]
 # with case where there is obstacle
 # use dijksta for obstalce may not be good enough
 # but it can be a choice
-
+q=
+distance=
 depot = departurePoint
 basic_pool=[]
 # Nodes will replace (1,nodesNumber)
@@ -157,7 +158,7 @@ def add_pattern_to_master_model(master_model, colNumber, rowNumber, one_candidat
     master_model.minimize(master_model.visiting_cost)
     return master_model
 
-def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
+def eecpp_solve(q,distance,colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
     master_model = make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs)
     
     tic = time.time()
@@ -235,7 +236,7 @@ def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
     outF.close()
 
 def eecpp_solve_default(**kwargs):
-    return eecpp_solve(colNumber, rowNumber, label_table,coord_x, coord_y, **kwargs)
+    return eecpp_solve(q,distance,colNumber, rowNumber, label_table,coord_x, coord_y, **kwargs)
 
 if __name__ == '__main__':
     s = eecpp_solve_default()
