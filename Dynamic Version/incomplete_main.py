@@ -19,6 +19,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import function
 
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
@@ -28,6 +29,35 @@ rowNumber=3
 
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
+
+#------------------------------------------------------------------------------
+#add automatic_basic_pool part
+#------------------------------------------------------------------------------
+"""
+This file is going to generate basic pool automatically for the map defined
+
+The format of pool is like [0, node, 0, [cost]]
+"""
+# turning cost is 0, from totalCost_calculation_by_set file we know.
+# we may need delete or add somthing to make function.totalCost_calculation can deal
+# with case where there is obstacle
+# use dijksta for obstalce may not be good enough
+# but it can be a choice
+
+depot = departurePoint
+basic_pool=[]
+# Nodes will replace (1,nodesNumber)
+for node in Nodes:
+#for node in range(1, nodesNumber):
+    unit_basic_pool=[]
+    unit_basic_pool.append(depot)
+    unit_basic_pool.append(node)
+    unit_basic_pool.append(depot)
+    cost = function.totalCost_calculation(distance_lambda,turn_gamma,unit_basic_pool, colNumber, rowNumber, obstacles)
+    unit_basic_pool.append([cost])
+    basic_pool.append(unit_basic_pool)
+        
+label_table = basic_pool
 
 label_table = [[0, 1, 0, [3.3468]], 
                [0, 2, 0, [3.5796]],
@@ -195,8 +225,8 @@ def eecpp_solve(colNumber, rowNumber, label_table, coord_x, coord_y, **kwargs):
         outF.write("\n")
         master_model=add_pattern_to_master_model(master_model, colNumber, rowNumber, one_candidate, outF)
     toc=time.time()
-#    print("Time taken for solving is " + str((toc-tic)) + "sec")
-#    print()
+    print("Time taken for solving is " + str((toc-tic)) + "sec")
+    print()
     TimeTaken = "Time taken for solving is "+str((toc-tic)) +"sec"
     outF.write(TimeTaken)
     outF.write("\n")
