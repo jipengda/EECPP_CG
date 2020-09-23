@@ -4,1259 +4,1274 @@ Master Model Solution and its cost:
 master model solution labels: [0, 1, 0, [3.3468]]
 master model solution labels: [0, 2, 0, [3.5796]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
-master model solution labels: [0, 5, 0, [3.6346]]
+master model solution labels: [0, 4, 0, [3.4432289173204564]]
+master model solution labels: [0, 5, 0, [3.634556625161951]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6346]]
-master model solution labels: [0, 8, 0, [3.7725]]
-master model objective: 28.337699999999998
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6346, 3.5796, 3.6346, 3.7725]
-rc_cost:-4.337483804839337e-05
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 8, 0, [3.772457834640913]]
+master model objective: 28.33760000228527
+Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432289173204564, 3.634556625161951, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.08999999999999986
 Column Generation Label and its cost:
-[0, 5, 0]
-3.6345566251619514
+[0, 2, 0]
+3.4896000000000003
 *************************************************************
 Column Generation Iteration: 2
 Master Model Solution and its cost: 
 master model solution labels: [0, 1, 0, [3.3468]]
-master model solution labels: [0, 2, 0, [3.5796]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
+master model solution labels: [0, 4, 0, [3.4432289173204564]]
+master model solution labels: [0, 5, 0, [3.634556625161951]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6346]]
-master model solution labels: [0, 8, 0, [3.7725]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model objective: 28.33765662516195
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6346, 3.5796, 3.6346, 3.7725]
-rc_cost:-4.337483804839337e-05
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 8, 0, [3.772457834640913]]
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model objective: 28.247600002285274
+Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432289173204564, 3.634556625161951, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.08999999999999986
 Column Generation Label and its cost:
-[0, 5, 0]
-3.6345566251619514
+[0, 2, 0]
+3.4896000000000003
 *************************************************************
 Column Generation Iteration: 3
 Master Model Solution and its cost: 
 master model solution labels: [0, 1, 0, [3.3468]]
-master model solution labels: [0, 2, 0, [3.5796]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
+master model solution labels: [0, 4, 0, [3.4432289173204564]]
+master model solution labels: [0, 5, 0, [3.634556625161951]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6346]]
-master model solution labels: [0, 8, 0, [3.7725]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model objective: 28.33765662516195
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6346, 3.7725]
-rc_cost:-4.337483804839337e-05
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 8, 0, [3.772457834640913]]
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model objective: 28.247600002285274
+Dual values:[0, 3.3468, 3.4896000000000003, 3.3468, 3.4432289173204564, 3.634556625161951, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.08999999999999986
 Column Generation Label and its cost:
-[0, 7, 0]
-3.6345566251619514
+[0, 4, 0]
+3.3532289173204566
 *************************************************************
 Column Generation Iteration: 4
 Master Model Solution and its cost: 
 master model solution labels: [0, 1, 0, [3.3468]]
-master model solution labels: [0, 2, 0, [3.5796]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
+master model solution labels: [0, 5, 0, [3.634556625161951]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 8, 0, [3.7725]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model objective: 28.337613250323905
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6346, 3.7725]
-rc_cost:-4.337483804839337e-05
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 8, 0, [3.772457834640913]]
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model objective: 28.157600002285275
+Dual values:[0, 3.3468, 3.4896000000000003, 3.3468, 3.4432289173204564, 3.634556625161951, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.08999999999999986
 Column Generation Label and its cost:
-[0, 7, 0]
-3.6345566251619514
+[0, 4, 0]
+3.3532289173204566
 *************************************************************
 Column Generation Iteration: 5
 Master Model Solution and its cost: 
 master model solution labels: [0, 1, 0, [3.3468]]
-master model solution labels: [0, 2, 0, [3.5796]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
+master model solution labels: [0, 5, 0, [3.634556625161951]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 8, 0, [3.7725]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model objective: 28.337613250323905
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.7725]
-rc_cost:-4.216535908696528e-05
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 8, 0, [3.772457834640913]]
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model objective: 28.157600002285275
+Dual values:[0, 3.3468, 3.4896000000000003, 3.3468, 3.3532289173204566, 3.634556625161951, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.16200000000000037
 Column Generation Label and its cost:
-[0, 8, 0]
-3.772457834640913
+[0, 5, 0]
+3.4725566251619506
 *************************************************************
 Column Generation Iteration: 6
 Master Model Solution and its cost: 
 master model solution labels: [0, 1, 0, [3.3468]]
-master model solution labels: [0, 2, 0, [3.5796]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
+master model solution labels: [0, 7, 0, [3.634556625161951]]
 master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model objective: 28.337571084964818
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.7725]
-rc_cost:-4.216535908696528e-05
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model objective: 27.99560000228527
+Dual values:[0, 3.3468, 3.4896000000000003, 3.3468, 3.3532289173204566, 3.634556625161951, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.16200000000000037
 Column Generation Label and its cost:
-[0, 8, 0]
-3.772457834640913
+[0, 5, 0]
+3.4725566251619506
 *************************************************************
 Column Generation Iteration: 7
 Master Model Solution and its cost: 
 master model solution labels: [0, 1, 0, [3.3468]]
-master model solution labels: [0, 2, 0, [3.5796]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
+master model solution labels: [0, 7, 0, [3.634556625161951]]
 master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model objective: 28.337571084964818
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-3.3468
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model objective: 27.99560000228527
+Dual values:[0, 3.3468, 3.4896000000000003, 3.3468, 3.3532289173204566, 3.4725566251619506, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.16200000000000037
 Column Generation Label and its cost:
-[0, 1, 2, 0]
-3.5796
+[0, 8, 0]
+3.6104578346409126
 *************************************************************
 Column Generation Iteration: 8
 Master Model Solution and its cost: 
+master model solution labels: [0, 1, 0, [3.3468]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model objective: 24.990771084964816
-Dual values:[0, 3.3468, 3.5796, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-3.3468
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model objective: 27.83360000228527
+Dual values:[0, 3.3468, 3.4896000000000003, 3.3468, 3.3532289173204566, 3.4725566251619506, 3.5796, 3.634556625161951, 3.772457834640913]
+rc_cost:-0.16200000000000037
 Column Generation Label and its cost:
-[0, 1, 2, 0]
-3.5796
+[0, 8, 0]
+3.6104578346409126
 *************************************************************
 Column Generation Iteration: 9
 Master Model Solution and its cost: 
+master model solution labels: [0, 1, 0, [3.3468]]
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model objective: 24.990771084964816
-Dual values:[0, 3.3468, 0.23280000000000012, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-1.6170574709677359
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 2, 0, [3.4896000000000003]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model objective: 27.83360000228527
+Dual values:[0, 3.3468, 3.4896000000000003, 3.3468, 3.3532289173204566, 3.4725566251619506, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-3.2208000000000006
 Column Generation Label and its cost:
-[0, 1, 3, 0]
-5.076542529032264
+[0, 1, 2, 0]
+3.6155999999999997
 *************************************************************
 Column Generation Iteration: 10
 Master Model Solution and its cost: 
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model objective: 24.990771084964816
-Dual values:[0, 1.729742529032264, 1.849857470967736, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.8789640351860175
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model objective: 24.61280000228527
+Dual values:[0, 3.3468, 0.2687999999999997, 3.3468, 3.3532289173204566, 3.4725566251619506, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-1.725245403230672
 Column Generation Label and its cost:
-[0, 1, 4, 0]
-4.293978493846247
+[0, 1, 3, 0]
+4.968354596769328
 *************************************************************
 Column Generation Iteration: 11
 Master Model Solution and its cost: 
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model objective: 24.990771084964816
-Dual values:[0, 0.8507784938462466, 2.7288215061537535, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.3703776744136782
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model objective: 24.61280000228527
+Dual values:[0, 1.621554596769328, 1.9940454032306718, 3.3468, 3.3532289173204566, 3.4725566251619506, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-0.5095701049148662
 Column Generation Label and its cost:
-[0, 1, 5, 0]
-4.11495744459452
+[0, 1, 4, 0]
+4.465213409174918
 *************************************************************
 Column Generation Iteration: 12
 Master Model Solution and its cost: 
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 5, 0, [3.6345566251619514]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model objective: 24.990771084964816
-Dual values:[0, 0.4804008194325684, 3.0991991805674317, 3.3468, 3.4432, 3.6345566251619514, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-1.1721479645733242
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model objective: 24.61280000228527
+Dual values:[0, 1.1119844918544617, 2.503615508145538, 3.3468, 3.3532289173204566, 3.4725566251619506, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-0.3132805194901085
 Column Generation Label and its cost:
-[0, 2, 3, 0]
-5.2738512159941076
+[0, 1, 5, 0]
+4.271260597526304
 *************************************************************
 Column Generation Iteration: 13
 Master Model Solution and its cost: 
-master model solution labels: [0, 4, 0, [3.4432]]
+master model solution labels: [0, 3, 0, [3.3468]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 5, 0, [4.11495744459452]]
-master model solution labels: [0, 2, 3, 0, [5.2738512159941076]]
-master model objective: 23.818623120391493
-Dual values:[0, 0.8507784938462466, 1.9270512159941076, 3.3468, 3.4432, 3.2641789507482732, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.023766122388365396
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 5, 0, [3.4725566251619506]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model objective: 24.61280000228527
+Dual values:[0, 0.7987039723643532, 2.8168960276356465, 3.3468, 3.3532289173204566, 3.4725566251619506, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-0.8915158106722254
 Column Generation Label and its cost:
-[0, 1, 8, 0]
-4.599470206098794
+[0, 2, 3, 0]
+5.272180216963421
 *************************************************************
 Column Generation Iteration: 14
 Master Model Solution and its cost: 
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 5, 0, [4.11495744459452]]
-master model solution labels: [0, 2, 3, 0, [5.2738512159941076]]
-master model objective: 23.818623120391493
-Dual values:[0, 0.8270123714578812, 1.9270512159941076, 3.3468, 3.4432, 3.2879450731366386, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.9116582634876327
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 5, 0, [4.271260597526304]]
+master model solution labels: [0, 2, 3, 0, [5.272180216963421]]
+master model objective: 23.721284191613044
+Dual values:[0, 1.1119844918544617, 2.503615508145538, 3.3468, 3.3532289173204566, 3.159276105671842, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-0.15386741091393086
 Column Generation Label and its cost:
-[0, 2, 4, 0]
-4.458592952506475
+[0, 1, 8, 0]
+4.5685749155814435
 *************************************************************
 Column Generation Iteration: 15
 Master Model Solution and its cost: 
-master model solution labels: [0, 3, 0, [3.3468]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 5, 0, [4.11495744459452]]
-master model solution labels: [0, 2, 4, 0, [4.458592952506475]]
-master model objective: 22.906964856903862
-Dual values:[0, 0.8270123714578812, 1.9270512159941076, 3.3468, 3.4432, 3.2879450731366386, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.9116582634876327
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 5, 0, [4.271260597526304]]
+master model solution labels: [0, 2, 3, 0, [5.272180216963421]]
+master model objective: 23.721284191613044
+Dual values:[0, 0.9581170809405308, 2.657482919059469, 3.3468, 3.3532289173204566, 3.313143516585773, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-0.7321027020960478
 Column Generation Label and its cost:
-[0, 2, 4, 0]
-4.458592952506475
+[0, 2, 3, 0]
+5.272180216963421
 *************************************************************
 Column Generation Iteration: 16
 Master Model Solution and its cost: 
-master model solution labels: [0, 3, 0, [3.3468]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 1, 5, 0, [4.11495744459452]]
-master model solution labels: [0, 2, 4, 0, [4.458592952506475]]
-master model objective: 22.906964856903862
-Dual values:[0, 0.8270123714578812, 1.0153929525064749, 3.3468, 3.4432, 3.2879450731366386, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.11719398072016585
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 5, 0, [4.271260597526304]]
+master model solution labels: [0, 2, 3, 0, [5.272180216963421]]
+master model objective: 23.721284191613044
+Dual values:[0, 0.9581170809405308, 1.925380216963421, 3.3468, 3.3532289173204566, 3.313143516585773, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-0.702922215645934
 Column Generation Label and its cost:
-[0, 2, 5, 0]
-4.186144044922948
+[0, 2, 4, 0]
+4.575686918637944
 *************************************************************
 Column Generation Iteration: 17
 Master Model Solution and its cost: 
 master model solution labels: [0, 3, 0, [3.3468]]
-master model solution labels: [0, 4, 0, [3.4432]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model objective: 22.789770876183695
-Dual values:[0, 0.8507784938462466, 0.9219650941746744, 3.3468, 3.4432, 3.2641789507482732, 3.5796, 3.6345566251619514, 3.7486917122525476]
-rc_cost:-2.4960215061537534
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 8, 0, [3.6104578346409126]]
+master model solution labels: [0, 1, 5, 0, [4.271260597526304]]
+master model solution labels: [0, 2, 4, 0, [4.575686918637944]]
+master model objective: 23.01836197596711
+Dual values:[0, 0.9581170809405308, 1.925380216963421, 3.3468, 2.6503067016745225, 3.313143516585773, 3.5796, 3.634556625161951, 3.6104578346409126]
+rc_cost:-0.9940078466510447
 Column Generation Label and its cost:
-[0, 3, 4, 0]
-4.293978493846247
+[0, 2, 5, 0]
+4.244515886898149
 *************************************************************
 Column Generation Iteration: 18
 Master Model Solution and its cost: 
+master model solution labels: [0, 3, 0, [3.3468]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 4, 0, [4.293978493846247]]
-master model objective: 20.29374937002994
-Dual values:[0, 0.8507784938462466, 0.9219650941746744, 3.3468, 3.4432, 3.2641789507482732, 3.5796, 3.6345566251619514, 3.7486917122525476]
-rc_cost:-2.4960215061537534
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model objective: 22.727276344962
+Dual values:[0, 1.1119844918544617, 1.222458001317487, 3.3468, 3.3532289173204566, 3.159276105671842, 3.5796, 3.634556625161951, 3.4565904237269818]
+rc_cost:-0.1372182200911798
 Column Generation Label and its cost:
-[0, 3, 4, 0]
-4.293978493846247
+[0, 2, 5, 0]
+4.244515886898149
 *************************************************************
 Column Generation Iteration: 19
 Master Model Solution and its cost: 
+master model solution labels: [0, 3, 0, [3.3468]]
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 4, 0, [4.293978493846247]]
-master model objective: 20.29374937002994
-Dual values:[0, 1.7542066998357861, 1.825393300164214, 1.7542066998357861, 2.5397717940104605, 2.3607507447587337, 3.5796, 3.6345566251619514, 2.845263506263008]
-rc_cost:-0.059955483841677815
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model objective: 22.727276344962
+Dual values:[0, 1.1119844918544617, 1.222458001317487, 3.3468, 3.3532289173204566, 3.0220578855806624, 3.5796, 3.634556625161951, 3.4565904237269818]
+rc_cost:-2.3791443896056785
 Column Generation Label and its cost:
-[0, 1, 6, 0]
-5.273851215994108
+[0, 3, 4, 0]
+4.320884527714778
 *************************************************************
 Column Generation Iteration: 20
 Master Model Solution and its cost: 
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 4, 0, [4.293978493846247]]
-master model objective: 20.29374937002994
-Dual values:[0, 1.6942512159941083, 1.7654378163225362, 1.6942512159941083, 2.5997272778521383, 2.4207062286004115, 3.5796, 3.6345566251619514, 2.905218990104686]
-rc_cost:-0.5176223575039236
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 4, 0, [4.320884527714778]]
+master model objective: 20.348131955356322
+Dual values:[0, 1.1119844918544617, 1.222458001317487, 3.3468, 3.3532289173204566, 3.0220578855806624, 3.5796, 3.634556625161951, 3.4565904237269818]
+rc_cost:-2.3791443896056785
 Column Generation Label and its cost:
-[0, 1, 7, 0]
-4.811185483652136
+[0, 3, 4, 0]
+4.320884527714778
 *************************************************************
 Column Generation Iteration: 21
 Master Model Solution and its cost: 
 master model solution labels: [0, 6, 0, [3.5796]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 4, 0, [4.293978493846247]]
-master model objective: 20.29374937002994
-Dual values:[0, 1.1766288584901847, 1.2478154588186126, 1.1766288584901847, 3.117349635356062, 2.938328586104335, 3.5796, 3.6345566251619514, 3.4228413476086095]
-rc_cost:-1.1766288584901847
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 4, 0, [4.320884527714778]]
+master model objective: 20.348131955356322
+Dual values:[0, 1.7525632452684872, 1.8630367547315125, 1.608234363808347, 2.712650163906431, 2.381479132166637, 3.5796, 3.634556625161951, 2.8160116703129563]
+rc_cost:-0.4572104386486666
 Column Generation Label and its cost:
-[0, 3, 6, 0]
-3.5796
+[0, 1, 7, 0]
+4.9299094317817715
 *************************************************************
 Column Generation Iteration: 22
 Master Model Solution and its cost: 
-master model solution labels: [0, 4, 0, [3.4432]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model objective: 19.442970876183693
-Dual values:[0, 0.8270123714578812, 0.898198971786309, 0, 3.4669661223883654, 3.2879450731366386, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.023737205067908995
+master model solution labels: [0, 6, 0, [3.5796]]
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 4, 0, [4.320884527714778]]
+master model objective: 20.348131955356322
+Dual values:[0, 1.2953528066198206, 1.405826316082846, 1.1510239251596803, 3.1698606025550977, 2.8386895708153035, 3.5796, 3.634556625161951, 3.273222108961623]
+rc_cost:-0.04106164672133872
 Column Generation Label and its cost:
-[0, 4, 0]
-3.4432289173204564
+[0, 2, 7, 0]
+4.999321294523458
 *************************************************************
 Column Generation Iteration: 23
 Master Model Solution and its cost: 
-master model solution labels: [0, 4, 0, [3.4432]]
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model objective: 19.442970876183693
-Dual values:[0, 0.8270123714578812, 0.898198971786309, 0, 3.4432289173204564, 3.2879450731366386, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-2.770738083330749
+master model solution labels: [0, 6, 0, [3.5796]]
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 4, 0, [4.320884527714778]]
+master model objective: 20.348131955356322
+Dual values:[0, 1.2953528066198206, 1.3647646693615072, 1.1510239251596803, 3.1698606025550977, 2.879751217536642, 3.5796, 3.634556625161951, 3.273222108961623]
+rc_cost:-0.9710239251596802
 Column Generation Label and its cost:
-[0, 4, 5, 0]
-3.960435907126346
+[0, 3, 6, 0]
+3.7596000000000003
 *************************************************************
 Column Generation Iteration: 24
 Master Model Solution and its cost: 
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model objective: 18.116213283538627
-Dual values:[0, 0.8270123714578812, 2.3421505451515383, 0, 2.1164424073549366, 1.8439934997714094, 3.5796, 3.6345566251619514, 3.772457834640913]
-rc_cost:-0.44779355745904503
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model objective: 19.560476344962
+Dual values:[0, 1.1119844918544617, 1.222458001317487, 0.18000000000000016, 3.3532289173204566, 3.0220578855806624, 3.5796, 3.634556625161951, 3.4565904237269818]
+rc_cost:-0.19357047459860155
 Column Generation Label and its cost:
-[0, 2, 6, 0]
-5.473956987692493
+[0, 4, 2, 0]
+4.382116444039342
 *************************************************************
 Column Generation Iteration: 25
 Master Model Solution and its cost: 
-master model solution labels: [0, 7, 0, [3.6345566251619514]]
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model objective: 18.11621328353863
-Dual values:[0, 0.8270123714578812, 2.3421505451515383, 0.44779355745904503, 2.1164424073549366, 1.8439934997714094, 3.131806442540955, 3.6345566251619514, 3.772457834640913]
-rc_cost:-1.0088355835364649
+master model solution labels: [0, 7, 0, [3.634556625161951]]
+master model solution labels: [0, 4, 0, [3.3532289173204566]]
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model objective: 19.560476344962
+Dual values:[0, 1.05563223734704, 1.0288875267188855, 0.18000000000000016, 3.3532289173204566, 3.215628360179264, 3.5796, 3.634556625161951, 3.5129426782344035]
+rc_cost:-2.461882431244656
 Column Generation Label and its cost:
-[0, 2, 7, 0]
-4.967871586777025
+[0, 4, 5, 0]
+4.106974846255064
 *************************************************************
 Column Generation Iteration: 26
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 5, 0, [3.960435907126346]]
-master model solution labels: [0, 2, 7, 0, [4.967871586777025]]
-master model objective: 17.107377700002164
-Dual values:[0, 0.8270123714578812, 2.3421505451515383, 0.44779355745904503, 2.1164424073549366, 1.8439934997714094, 3.131806442540955, 2.6257210416254866, 3.772457834640913]
-rc_cost:-1.4232154272859763
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 7, 0, [4.999321294523458]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 5, 0, [4.106974846255064]]
+master model objective: 17.434471056359968
+Dual values:[0, 1.2953528066198206, 2.2598287423412136, 0.18000000000000016, 2.1222877016981285, 1.9846871445569358, 3.5796, 3.634556625161951, 3.273222108961623]
+rc_cost:-0.17614287318858013
 Column Generation Label and its cost:
-[0, 2, 8, 0]
-4.691392952506475
+[0, 2, 6, 0]
+5.6632858691526335
 *************************************************************
 Column Generation Iteration: 27
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 7, 0, [4.811185483652136]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 5, 0, [3.960435907126346]]
-master model solution labels: [0, 2, 8, 0, [4.691392952506475]]
-master model objective: 17.042614343284956
-Dual values:[0, 1.7438386267961596, 1.8357613732038405, 0.04958741080205131, 1.6100532354072388, 2.350382671719107, 3.530012589197949, 3.1321102135731844, 2.8556315793026346]
-rc_cost:-0.0647633567172079
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 7, 0, [4.999321294523458]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 5, 0, [4.106974846255064]]
+master model objective: 17.434471056359968
+Dual values:[0, 1.2953528066198206, 2.2598287423412136, 0.3561428731885803, 2.1222877016981285, 1.9846871445569358, 3.40345712681142, 3.634556625161951, 3.273222108961623]
+rc_cost:-0.8950640729797064
 Column Generation Label and its cost:
-[0, 1, 7, 0]
-4.811185483652136
+[0, 2, 7, 0]
+4.999321294523458
 *************************************************************
 Column Generation Iteration: 28
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 7, 0, [4.811185483652136]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 5, 0, [3.960435907126346]]
-master model solution labels: [0, 2, 8, 0, [4.691392952506475]]
-master model objective: 17.042614343284956
-Dual values:[0, 1.7114569484375557, 1.8681430515624444, 0.017205732443447364, 1.6424349137658427, 2.3180009933605032, 3.5623942675565528, 3.0997285352145805, 2.8232499009440306]
-rc_cost:-0.7462362288159206
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 7, 0, [4.999321294523458]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 5, 0, [4.106974846255064]]
+master model objective: 17.434471056359968
+Dual values:[0, 1.7730940686291565, 1.8425059313708432, 0.18000000000000016, 2.539610512668499, 1.5673643335865655, 3.5796, 3.156815363152615, 2.795480846952287]
+rc_cost:-1.4939061363662192
 Column Generation Label and its cost:
 [0, 4, 6, 0]
-4.458592952506475
+4.62530437630228
 *************************************************************
 Column Generation Iteration: 29
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 7, 0, [4.811185483652136]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 5, 0, [3.960435907126346]]
-master model solution labels: [0, 2, 8, 0, [4.691392952506475]]
-master model objective: 17.042614343284956
-Dual values:[0, 1.7438386267961596, 1.8357613732038405, 0.731060282900764, 1.6100532354072388, 2.350382671719107, 2.848539717099236, 3.0673468568559765, 2.8556315793026346]
-rc_cost:-0.7169641851368693
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 7, 0, [4.999321294523458]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 5, 0, [4.106974846255064]]
+master model objective: 17.434471056359968
+Dual values:[0, 1.7730940686291565, 1.8425059313708432, 0.8392605144254786, 1.7049648907277581, 2.4020099555273062, 2.9203394855745217, 3.156815363152615, 2.795480846952287]
+rc_cost:-0.870769697377483
 Column Generation Label and its cost:
 [0, 4, 7, 0]
-3.960435907126346
+3.99101055650289
 *************************************************************
 Column Generation Iteration: 30
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model objective: 16.325650158148086
-Dual values:[0, 1.7438386267961596, 1.8357613732038405, 0.731060282900764, 1.6100532354072388, 2.350382671719107, 2.848539717099236, 2.350382671719107, 2.8556315793026346]
-rc_cost:-0.6932269800689603
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model objective: 16.563701358982485
+Dual values:[0, 1.821172355314077, 1.7944276446859226, 0.791182227740558, 1.6568866040428376, 2.4500882422122268, 2.9684177722594423, 3.1087370764676945, 2.7474025602673664]
+rc_cost:-0.7746131240076419
 Column Generation Label and its cost:
-[0, 4, 8, 0]
-3.772457834640913
+[0, 4, 7, 0]
+3.99101055650289
 *************************************************************
 Column Generation Iteration: 31
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model objective: 16.325650158148086
-Dual values:[0, 1.7542066998357861, 1.825393300164214, 0.059955483841677815, 0.9271943283779049, 2.3607507447587337, 3.5196445161583223, 3.033241578748441, 2.845263506263008]
-rc_cost:-0.9125236741400311
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model objective: 16.563701358982485
+Dual values:[0, 1.821172355314077, 1.7944276446859226, 0.18000000000000016, 0.8822734800351957, 2.4500882422122268, 3.5796, 3.1087370764676945, 2.7474025602673664]
+rc_cost:-0.0477070591007176
 Column Generation Label and its cost:
-[0, 5, 6, 0]
-4.967871586777025
+[0, 1, 6, 0]
+5.35306529621336
 *************************************************************
 Column Generation Iteration: 32
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 8, 0, [4.599470206098794]]
-master model solution labels: [0, 2, 5, 0, [4.186144044922948]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model objective: 16.325650158148086
-Dual values:[0, 1.7542066998357861, 1.825393300164214, 0.9724791579817089, 0.9271943283779049, 2.3607507447587337, 2.607120842018291, 3.033241578748441, 2.845263506263008]
-rc_cost:-0.949084038665986
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model objective: 16.563701358982485
+Dual values:[0, 1.821172355314077, 1.7944276446859226, 0.22770705910071776, 0.8822734800351957, 2.4500882422122268, 3.5318929408992825, 3.1087370764676945, 2.7474025602673664]
+rc_cost:-0.25511175063093283
 Column Generation Label and its cost:
-[0, 5, 7, 0]
-4.444908284841189
+[0, 5, 1, 0]
+4.016148846895371
 *************************************************************
 Column Generation Iteration: 33
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 5, 7, 0, [4.444908284841189]]
-master model objective: 15.376566119482101
-Dual values:[0, 1.7542066998357861, 1.825393300164214, 0.9724791579817089, 0.9271943283779049, 2.3607507447587337, 2.607120842018291, 3.033241578748441, 2.845263506263008]
-rc_cost:-0.949084038665986
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 2, 5, 0, [4.244515886898149]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model objective: 16.563701358982485
+Dual values:[0, 1.6936164799986106, 1.921983520001389, 0.18000000000000016, 0.913672781980821, 2.3225323668967603, 3.5796, 3.077337774522069, 2.874958435582833]
+rc_cost:-0.017023105185121068
 Column Generation Label and its cost:
-[0, 5, 7, 0]
-4.444908284841189
+[0, 5, 2, 0]
+4.227492781713028
 *************************************************************
 Column Generation Iteration: 34
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 8, 0, [3.772457834640913]]
-master model solution labels: [0, 5, 7, 0, [4.444908284841189]]
-master model objective: 15.376566119482101
-Dual values:[0, 2.2228716651836553, 1.3567283348163448, 0.528620449189547, 1.4076134016960218, 1.8920857794108645, 3.050979550810453, 2.552822505430324, 2.364844432944891]
-rc_cost:-0.11712467961027784
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 2, 0, [4.227492781713028]]
+master model objective: 16.546678253797364
+Dual values:[0, 1.6936164799986106, 1.921983520001389, 0.18000000000000016, 0.913672781980821, 2.3225323668967603, 3.5796, 3.077337774522069, 2.874958435582833]
+rc_cost:-0.017023105185121068
 Column Generation Label and its cost:
-[0, 5, 8, 0]
-4.139805532745478
+[0, 5, 2, 0]
+4.227492781713028
 *************************************************************
 Column Generation Iteration: 35
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 2, 0, [4.227492781713028]]
+master model objective: 16.546678253797364
+Dual values:[0, 1.7021280325911712, 1.9134719674088285, 0.18000000000000016, 0.9051612293882605, 2.3140208143042, 3.5796, 3.0858493271146297, 2.8664468829902723]
+rc_cost:-0.9708985464077364
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 5, 6, 0]
+4.9227222678964635
 *************************************************************
 Column Generation Iteration: 36
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 2, 0, [4.227492781713028]]
+master model objective: 16.546678253797364
+Dual values:[0, 1.7021280325911712, 1.9134719674088285, 1.1508985464077366, 0.9051612293882605, 2.3140208143042, 2.6087014535922637, 3.0858493271146297, 2.8664468829902723]
+rc_cost:-0.13797094169396962
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 3, 7, 0]
+4.098776931828397
 *************************************************************
 Column Generation Iteration: 37
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 2, 0, [4.227492781713028]]
+master model objective: 16.546678253797364
+Dual values:[0, 1.6331425617441866, 1.982457438255813, 1.0819130755607518, 0.9741467002352451, 2.2450353434572152, 2.6776869244392483, 3.016863856267645, 2.935432353837257]
+rc_cost:-0.10035589038939197
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 2, 8, 0]
+4.817533901703678
 *************************************************************
 Column Generation Iteration: 38
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 2, 0, [4.227492781713028]]
+master model objective: 16.546678253797364
+Dual values:[0, 1.6833205069388826, 1.9322794930611171, 1.132091020755448, 1.0243246454299415, 2.295213288651911, 2.6275089792445523, 2.9666859110729487, 2.885254408642561]
+rc_cost:-0.7300605749757163
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 5, 7, 0]
+4.531838624749144
 *************************************************************
 Column Generation Iteration: 39
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 2, 0, [4.227492781713028]]
+master model objective: 16.546678253797364
+Dual values:[0, 1.6833205069388826, 1.9322794930611171, 1.8621515957311643, 1.7543852204056578, 2.295213288651911, 1.897448404268836, 2.2366253360972324, 2.885254408642561]
+rc_cost:-0.00024766883851334853
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 3, 8, 0]
+4.747158335535212
 *************************************************************
 Column Generation Iteration: 40
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 8, 0, [4.5685749155814435]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 2, 0, [4.227492781713028]]
+master model objective: 16.546678253797364
+Dual values:[0, 1.6833205069388826, 1.9322794930611171, 1.861903926892651, 1.7543852204056578, 2.295213288651911, 1.8976960731073493, 2.2366253360972324, 2.885254408642561]
+rc_cost:-0.7051817944073053
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 4, 8, 0]
+3.9344578346409134
 *************************************************************
 Column Generation Iteration: 41
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 5, 7, 0, [4.531838624749144]]
+master model solution labels: [0, 4, 8, 0, [3.9344578346409134]]
+master model objective: 15.841496459390056
+Dual values:[0, 1.6833205069388826, 1.9322794930611171, 1.861903926892651, 1.0492034259983525, 2.295213288651911, 1.8976960731073493, 2.2366253360972324, 2.885254408642561]
+rc_cost:-0.8755435478414197
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 5, 8, 0]
+4.304924149453052
 *************************************************************
 Column Generation Iteration: 42
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model objective: 15.671134705955941
+Dual values:[0, 2.035911404142535, 2.2848703902647696, 1.5095606985275114, 1.401794323202005, 1.9426223914482588, 2.250039301472489, 2.5892162333008852, 2.5326635114389084]
+rc_cost:-0.7051817944073049
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 1, 2, 0]
+3.6155999999999997
 *************************************************************
 Column Generation Iteration: 43
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model objective: 15.671134705955941
+Dual values:[0, 1.6833205069388826, 1.9322794930611171, 1.156969801323859, 1.0492034259983525, 1.5900314942446059, 2.6026301986761413, 2.9418071305045377, 2.885254408642561]
+rc_cost:-0.17036175343411442
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 5, 8, 0]
+4.304924149453052
 *************************************************************
 Column Generation Iteration: 44
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 3, 6, 0, [3.7596000000000003]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model objective: 15.671134705955941
+Dual values:[0, 1.705884048177038, 1.9097159518229616, 1.0091715891279, 0.9014052138023936, 1.442233282048647, 2.7504284108721, 3.0896053427004966, 2.8626908674044054]
+rc_cost:-0.1080000000000001
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 6, 3, 0]
+3.6516
 *************************************************************
 Column Generation Iteration: 45
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model objective: 15.563134705955942
+Dual values:[0, 1.705884048177038, 1.9097159518229616, 1.0091715891279, 0.9014052138023936, 1.442233282048647, 2.7504284108721, 3.0896053427004966, 2.8626908674044054]
+rc_cost:-0.1080000000000001
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 6, 3, 0]
+3.6516
 *************************************************************
 Column Generation Iteration: 46
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model objective: 15.563134705955942
+Dual values:[0, 1.705884048177038, 1.9097159518229616, 1.0091715891279, 0.9014052138023936, 1.442233282048647, 2.6424284108721, 3.0896053427004966, 2.8626908674044054]
+rc_cost:-1.6942615506248506
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 6, 7, 0]
+4.037772202947746
 *************************************************************
 Column Generation Iteration: 47
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model objective: 15.563134705955942
+Dual values:[0, 1.6774712756480437, 1.938128724351956, 1.8563023644403254, 1.748535989114819, 2.2893640573610723, 1.7952976355596748, 2.2424745673880713, 2.01556009209198]
+rc_cost:-0.14047123738951006
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 5, 4, 0]
+3.897428809086381
 *************************************************************
 Column Generation Iteration: 48
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 4, 7, 0, [3.99101055650289]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model objective: 15.563134705955942
+Dual values:[0, 1.5370000382585336, 2.078599961741466, 1.8563023644403254, 1.748535989114819, 2.1488928199715622, 1.7952976355596748, 2.2424745673880713, 2.15603132948149]
+rc_cost:-0.13387032362070483
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 7, 4, 0]
+3.8571402328821853
 *************************************************************
 Column Generation Iteration: 49
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model solution labels: [0, 7, 4, 0, [3.8571402328821853]]
+master model objective: 15.429264382335239
+Dual values:[0, 1.6708703618792384, 1.9447296381207613, 1.8563023644403254, 1.614665665494114, 2.282763143592267, 1.7952976355596748, 2.2424745673880713, 2.0221610058607853]
+rc_cost:-0.11292830360463135
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 7, 5, 0]
+4.412309407375707
 *************************************************************
 Column Generation Iteration: 50
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model solution labels: [0, 7, 4, 0, [3.8571402328821853]]
+master model objective: 15.429264382335239
+Dual values:[0, 1.6144062100769228, 2.001193789923077, 1.7998382126380097, 1.6711298172964297, 2.2262989917899514, 1.8517617873619905, 2.1860104155857556, 2.078625157663101]
+rc_cost:-0.0043718419752014626
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 7, 6, 0]
+4.033400360972545
 *************************************************************
 Column Generation Iteration: 51
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 5, 8, 0, [4.304924149453052]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model solution labels: [0, 7, 4, 0, [3.8571402328821853]]
+master model objective: 15.429264382335239
+Dual values:[0, 1.6144062100769228, 2.001193789923077, 1.8042100546132112, 1.6711298172964297, 2.2262989917899514, 1.847389945386789, 2.1860104155857556, 2.078625157663101]
+rc_cost:-0.04630577627501875
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 7, 8, 0]
+4.218329796973838
 *************************************************************
 Column Generation Iteration: 52
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model solution labels: [0, 5, 4, 0, [3.897428809086381]]
+master model solution labels: [0, 7, 8, 0, [4.218329796973838]]
+master model objective: 15.382958606060217
+Dual values:[0, 1.6144062100769228, 2.001193789923077, 1.8042100546132112, 1.6711298172964297, 2.2262989917899514, 1.847389945386789, 2.1860104155857556, 2.032319381388082]
+rc_cost:-0.1260107003604629
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 5, 0]
+4.132607672817571
 *************************************************************
 Column Generation Iteration: 53
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model solution labels: [0, 7, 4, 0, [3.8571402328821853]]
+master model solution labels: [0, 8, 5, 0, [4.132607672817571]]
+master model objective: 15.256947905699757
+Dual values:[0, 1.6144062100769228, 2.001193789923077, 1.8042100546132112, 1.6711298172964297, 2.2262989917899514, 1.847389945386789, 2.1860104155857556, 2.032319381388082]
+rc_cost:-0.1260107003604629
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 5, 0]
+4.132607672817571
 *************************************************************
 Column Generation Iteration: 54
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model solution labels: [0, 7, 4, 0, [3.8571402328821853]]
+master model solution labels: [0, 8, 5, 0, [4.132607672817571]]
+master model objective: 15.256947905699757
+Dual values:[0, 1.5426737405311748, 2.072926259468825, 1.858488285427926, 1.6168515864817148, 2.1545665222442034, 1.793111714572074, 2.2402886464004705, 1.9780411505733673]
+rc_cost:-0.12803705540076393
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 7, 0]
+4.090292741573074
 *************************************************************
 Column Generation Iteration: 55
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 1, 2, 0, [3.6155999999999997]]
+master model solution labels: [0, 6, 3, 0, [3.6516]]
+master model solution labels: [0, 5, 4, 0, [3.897428809086381]]
+master model solution labels: [0, 8, 7, 0, [4.090292741573074]]
+master model objective: 15.254921550659454
+Dual values:[0, 1.6144062100769228, 2.001193789923077, 1.8042100546132112, 1.6711298172964297, 2.2262989917899514, 1.847389945386789, 2.1860104155857556, 1.9042823259873183]
+rc_cost:-0.37693970797387877
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 1, 2, 3, 0]
+5.042870346639332
 *************************************************************
 Column Generation Iteration: 56
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 15.058517865884308
+Dual values:[0, 1.4358965419184906, 2.179703458081509, 1.623674031414478, 1.849639485454862, 2.047789323631519, 2.027925968585522, 2.0054743923870224, 2.0848183491860515]
+rc_cost:-0.12600000000000078
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 57
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 58
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 59
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 60
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 61
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 62
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 63
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 64
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 65
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 66
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 67
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 68
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 69
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 70
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 71
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 72
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 73
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 74
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 75
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 76
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 77
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 78
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 79
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 80
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 81
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 82
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 83
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 84
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 85
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 86
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 87
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 88
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 89
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 90
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 91
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 92
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
-rc_cost:-8.881784197001252e-16
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
 Column Generation Label and its cost:
-[0, 6, 1, 0]
-5.2738512159941076
+[0, 8, 4, 0]
+3.8084578346409126
 *************************************************************
 Column Generation Iteration: 93
 Master Model Solution and its cost: 
-master model solution labels: [0, 1, 2, 0, [3.5796]]
-master model solution labels: [0, 3, 6, 0, [3.5796]]
-master model solution labels: [0, 4, 7, 0, [3.960435907126346]]
-master model solution labels: [0, 5, 8, 0, [4.139805532745478]]
-master model objective: 15.259441439871825
-Dual values:[0, 2.2814340049887942, 1.2981659950112059, 0.5871827889946859, 1.4661757415011607, 1.8335234396057256, 2.992417211005314, 2.4942601656251853, 2.3062820931397523]
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+*************************************************************
+Column Generation Iteration: 94
+Master Model Solution and its cost: 
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+*************************************************************
+Column Generation Iteration: 95
+Master Model Solution and its cost: 
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+*************************************************************
+Column Generation Iteration: 96
+Master Model Solution and its cost: 
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+*************************************************************
+Column Generation Iteration: 97
+Master Model Solution and its cost: 
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+*************************************************************
+Column Generation Iteration: 98
+Master Model Solution and its cost: 
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+*************************************************************
+Column Generation Iteration: 99
+Master Model Solution and its cost: 
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+*************************************************************
+Column Generation Iteration: 100
+Master Model Solution and its cost: 
+master model solution labels: [0, 7, 6, 0, [4.033400360972545]]
+master model solution labels: [0, 1, 2, 3, 0, [5.042870346639332]]
+master model objective: 14.99551786588431
+Dual values:[0, 1.4988965419184908, 2.116703458081509, 1.6866740314144781, 1.7866394854548615, 2.1107893236315194, 1.964925968585522, 2.0684743923870226, 2.0218183491860513]
+rc_cost:-2.220446049250313e-16
+Column Generation Label and its cost:
+[0, 8, 4, 0]
+3.8084578346409126
+Time taken for solving is 1.5156514644622803sec
