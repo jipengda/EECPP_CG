@@ -109,15 +109,15 @@ def RSIntersection(r_xmin,r_xmax,r_ymin, r_ymax, nodeA, nodeB, colNumber, rowNum
 
 #--------------------------------Data-----------------------------------------
 agentNumber = 10
-colNumber=4
-rowNumber=4
+colNumber=3
+rowNumber=3
 coord_x = Data.create_coord_x(colNumber, rowNumber)
 coord_y = Data.create_coord_y(colNumber, rowNumber)
 Battery_capacity_constraint = 6.0 # 6.0 is test
 nodesNumber=rowNumber * colNumber
 sideLength=1
 departurePoint=0
-obstacles=[4,8,9,12,13] # no obstacle
+obstacles=[] # no obstacle
 Nodes = [i for i in range(nodesNumber) if i not in obstacles and i!=departurePoint]
 NodesAndDeparturePoint=[i for i in range(nodesNumber)]
 
@@ -181,6 +181,8 @@ The format of pool is like [0, node, 0, [cost]]
 # use dijksta for obstalce may not be good enough
 # but it can be a choice
 
+# I mean for basic_pool
+# we also need use varied turn_gamma
 depot = departurePoint
 basic_pool=[]
 # Nodes will replace (1,nodesNumber)
@@ -196,19 +198,6 @@ for node in Nodes:
         
 label_table = basic_pool
 
-label_table = [[0, 1, 0, [3.3468]], 
-               [0, 2, 0, [3.5796]],
-               [0, 3, 0, [3.3468]],
-               [0, 4, 0, [3.4432]],
-	           [0, 5, 0, [3.6346]],
-               [0, 6, 0, [3.5796]],
-               [0, 7, 0, [3.6346]],
-               [0, 8, 0, [3.7725]]]
-'''
-label_table=[[0, 9, 18, 14, 10, 6, 0, [4.869076376472115]],
-	      [0, 13, 17, 16, 12, 8, 4, 0, [4.495260411104263]],
-	      [0, 5, 19, 15, 11, 7, 3, 2, 1, 0, [5.682184093091879]]]
-'''
 
 def make_eecpp_master_model(label_table, colNumber, rowNumber, **kwargs):
     label_number = len(label_table)
