@@ -1275,3 +1275,5 @@ Column Generation Label and its cost:
 [0, 8, 4, 0]
 3.8084578346409126
 Time taken for solving is 1.5156514644622803sec
+
+。。。。
